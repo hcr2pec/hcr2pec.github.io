@@ -225,9 +225,12 @@ div.season-button, div.episode-button {
 	border-radius: 5px;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 1.3em;
+	font-family: arial narrow;
+	font-size: 1em;
+	letter-spacing: 1px;
 	margin: 2px;
-	padding: 5px;
+	padding: 7px;
+	text-transform: uppercase;
 }
 
 div.season-button.selected, div.episode-button.selected {
