@@ -29,7 +29,7 @@ div.title {
 	font-size: 1.6em;
 	font-weight: bold;
 	margin-bottom: 5px;
-	max-width: calc(100% - 210px);
+	max-width: calc(100% - 250px);
 	padding: 10px;
 }
 
@@ -43,7 +43,7 @@ div.title a:hover {
 }
 
 div.navi-buttons {
-	width: calc(100% - 210px);
+	width: calc(100% - 250px);
 }
 
 div.cfg {
@@ -244,9 +244,11 @@ div.type-button {
 	border-radius: 5px;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 1.2em;
+	font-size: 1em;
+	letter-spacing: 1px;
 	margin: 2px;
 	padding: 5px;
+	text-transform: uppercase;
 }
 
 div.type-button.selected {
@@ -259,9 +261,11 @@ div.e-button, div.s-button {
 	border-radius: 5px;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 1.2em;
+	font-size: 1em;
+	letter-spacing: 1px;
 	margin: 2px;
 	padding: 5px;
+	text-transform: uppercase;
 }
 
 div.e-button.selected, div.s-button.selected {
