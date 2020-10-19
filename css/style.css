@@ -1,0 +1,326 @@
+html {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
+
+body, table {
+	font-family: arial, verdana;
+	font-size: 11px;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+table {
+	box-shadow: 10px 10px 10px #999;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+div.title {
+	background-color: #e9f5ff;
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	color: #999;
+	display: inline-block;
+	font-size: 1.6em;
+	font-weight: bold;
+	margin-bottom: 5px;
+	max-width: calc(100% - 210px);
+	padding: 10px;
+}
+
+div.title a, div.title a:visited {
+	color: #6985ff;
+	text-decoration: none;
+}
+
+div.title a:hover {
+	text-decoration: underline;
+}
+
+div.navi-buttons {
+	width: calc(100% - 210px);
+}
+
+div.cfg {
+	display: block;
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 25px;
+}
+
+div.tables-title {
+	background-color: #ddd;
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid #ccc;
+	display: none;
+	font-size: 1.3em;
+	letter-spacing: 2px;
+	padding: 10px;
+}
+
+tr.row0 {
+	background-color: #eeeeee;
+}
+
+tr.place-1 {
+	border-bottom: 2px solid #999;
+	border-top: 2px solid #999;
+}
+
+tr.place-1 td.nick, tr.place-1 td.team, tr.place-1 td.nation, tr.place-1 td.total-score {
+	font-size: 1.3em;
+}
+
+tr.place-2 {
+	border-bottom: 2px solid #999;
+}
+
+tr.place-2 td.nick, tr.place-2 td.team, tr.place-2 td.nation, tr.place-2 td.total-score {
+	font-size: 1.2em;
+}
+
+tr.place-3 {
+	border-bottom: 2px solid #999;
+}
+
+tr.place-3 td.nick, tr.place-3 td.team, tr.place-3 td.nation, tr.place-3 td.total-score {
+	font-size: 1.1em;
+}
+
+td.rank {
+	text-align: center;
+}
+
+td.nick {
+	min-width: 100px;
+}
+
+td.team {
+	min-width: 100px;
+}
+
+td.nation {
+	text-align: center;
+	width: 40px;
+}
+
+td.total-score, td.score {
+	color: #777;
+	font-family: arial narrow;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-align: center;
+	text-decoration: dotted;
+	width: 40px;
+}
+
+td.score-change, td.rank-change {
+	text-align: center;
+	width: 40px;
+}
+
+td.score-change span.plus, td.rank-change span.plus {
+	background-color: #839c0e;
+	border-radius: 3px;
+	color: #fff;
+	font-weight: bold;
+	padding: 3px;
+}
+
+td.score-change span.minus, td.rank-change span.minus {
+	background-color: #ff330e;
+	border-radius: 3px;
+	color: #fff;
+	font-weight: bold;
+	padding: 3px;
+}
+
+td.rank-change span.rookie {
+	background-color: #9ea3ff;
+	border-radius: 3px;
+	color: #fff;
+	font-weight: bold;
+	padding: 3px 7px;
+}
+
+td.pec-count {
+	text-align: center;
+}
+
+td.avg {
+	text-align: center;
+}
+
+th, td {
+	margin: 0;
+	padding: 3px;
+}
+
+th {
+	background-color: #94ac26;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+th.table-title {
+	background-color: #839c0e;
+	color: #ffffff;
+	font-size: 1.5em;
+	font-weight: bold;
+	height: 2em;
+}
+
+th.subtitle {
+	background-color: #b4cc26;
+	font-size: .8em;
+}
+
+td.gold {
+	background-color: #ffdf00;
+	color: #333;
+}
+
+td.silver {
+	background-color: #cccccc;
+	color: #333;
+}
+
+td.bronze {
+	background-color: #c49c48;
+	color: #333;
+}
+
+td.fourplus {
+	background-color: #ccc;
+	color: #333;
+}
+
+td.top30 {
+	background-color: #d9e0ae;
+	color: #333;
+}
+
+td.top10 {
+	background-color: #d9e0ae;
+	color: #333;
+}
+
+td.rejected {
+	color: #999999;
+	text-decoration: line-through;
+	text-decoration-color: #ee0000;
+	text-decoration-style: double;
+}
+
+div.season-button, div.episode-button {
+	background-color: #eeeeee;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.3em;
+	margin: 2px;
+	padding: 5px;
+}
+
+div.season-button.selected, div.episode-button.selected {
+	background-color: #ffe699;
+	cursor: default;
+}
+
+div.type-button {
+	background-color: #eeeeee;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.2em;
+	margin: 2px;
+	padding: 5px;
+}
+
+div.type-button.selected {
+	background-color: #eeffcc;
+}
+
+div.e-button, div.s-button {
+	background-color: #eeeeee;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.2em;
+	margin: 2px;
+	padding: 5px;
+}
+
+div.e-button.selected, div.s-button.selected {
+	background-color: #ffeecc;
+}
+
+span.nation-no-flag {
+	border: 1px solid #000;
+	border-radius: 3px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding: 2px 6px;
+	text-align: center;
+}
+
+table.team {
+	border-collapse: collapse;
+	display: inline-table;
+	font-weight: bold;
+	margin-right: 20px;
+	margin-top: 20px;
+	width: 420px;
+}
+
+table.team td.rank {
+	padding: 5px;
+	width: 15px;
+}
+
+table.team td.team {
+	padding: 5px;
+}
+
+table.team td.pec {
+	text-align: center;
+	width: 55px;
+}
+
+table.team td.score {
+	padding: 5px;
+	text-align: right;
+	width: 50px;
+}
+
+table.team tr.players {
+	background-color: #fff;
+	height: 115px;
+	vertical-align: top;
+}
+
+table.team tr.players table {
+	line-height: 13px;
+	width: 100%;
+}
+
+table.team tr.players td.rank {
+	padding-left: 5px;
+	width: 20px;
+}
+
+table.team tr.players td.score {
+	padding-right: 5px;
+	text-align: right;
+	width: 45px;
+}
