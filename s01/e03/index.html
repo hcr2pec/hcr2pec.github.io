@@ -1,0 +1,1283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<title>HCR2 PEC stats - s1e3</title>
+		<link rel="stylesheet" type="text/css" href="../../css/style.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="../../js/script.min.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180815415-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-180815415-1');
+		</script>
+ -->
+	</head>
+	<body>
+		<div style="display: inline-block; min-height: 115px; width: 100%;">
+			<div class="title">Hill Climb Racing 2 PEC (Public Event Conquer) stats site / last update: 2020-10-21, 10:57 (<span style="font-style: italic;">Warsaw time</span>) / our official Discord server: <a href="https://discord.gg/gphE46A" target="_blank">https://discord.gg/gphE46A</a></div>
+			<div>
+				<div class="season-button selected" data-season="1">Season 1</div>
+				<div class="season-button" data-season="2">Season 2</div>
+				<div class="alltime-button">All-time</div>
+			</div>
+			<div class="navi-buttons">
+				<div class="episode-button" data-season="1" data-episode="1" style="display: none;">Episode 1 (w)</div>
+				<div class="episode-button" data-season="1" data-episode="2" style="display: none;">Episode 2 (w)</div>
+				<div class="episode-button selected" data-season="1" data-episode="3" style="display: none;">Episode 3 (d)</div>
+				<div class="episode-button" data-season="1" data-episode="4" style="display: none;">Episode 4 (j)</div>
+				<div class="episode-button" data-season="1" data-episode="5" style="display: none;">Episode 5 (j)</div>
+				<div class="episode-button" data-season="1" data-episode="6" style="display: none;">Episode 6 (s)</div>
+				<div class="episode-button" data-season="1" data-episode="7" style="display: none;">Episode 7 (t)</div>
+				<div class="episode-button" data-season="1" data-episode="8" style="display: none;">Episode 8 (t)</div>
+				<div class="episode-button" data-season="1" data-episode="9" style="display: none;">Episode 9 (w)</div>
+				<div class="episode-button" data-season="1" data-episode="10" style="display: none;">Episode 10 (d)</div>
+				<div class="episode-button" data-season="1" data-episode="11" style="display: none;">Episode 11 (s)</div>
+				<div class="episode-button" data-season="1" data-episode="12" style="display: none;">Episode 12 (s)</div>
+				<div class="episode-button" data-season="1" data-episode="13" style="display: none;">Episode 13 (t)</div>
+				<div class="episode-button" data-season="1" data-episode="14" style="display: none;">Episode 14 (t)</div>
+				<div class="episode-button" data-season="1" data-episode="15" style="display: none;">Episode 15 (j)</div>
+				<div class="episode-button" data-season="2" data-episode="1" style="display: none;">Episode 1 (j)</div>
+				<div class="episode-button" data-season="2" data-episode="2" style="display: none;">Episode 2 (d)</div>
+				<div class="episode-button" data-season="2" data-episode="3" style="display: none;">Episode 3 (t)</div>
+				<div class="episode-button" data-season="2" data-episode="4" style="display: none;">Episode 4 (t)</div>
+				<div class="episode-button" data-season="2" data-episode="5" style="display: none;">Episode 5 (t)</div>
+				<div class="episode-button" data-season="2" data-episode="6" style="display: none;">Episode 6 (s)</div>
+				<div class="episode-button" data-season="2" data-episode="7" style="display: none;">Episode 7 (t)</div>
+				<div class="episode-button" data-season="2" data-episode="8" style="display: none;">Episode 8 (t)</div>
+				<div class="episode-button" data-season="2" data-episode="9" style="display: none;">Episode 9 (t)</div>
+				<div class="episode-button" data-season="2" data-episode="10" style="display: none;">Episode 10 (t)</div>
+				<div class="episode-button" data-season="2" data-episode="11" style="display: none;">Episode 11 (t)</div>
+				<div class="episode-button" data-season="2" data-episode="12" style="display: none;">Episode 12 (w)</div>
+				<div class="episode-button" data-season="2" data-episode="13" style="display: none;">Episode 13 (t)</div>
+				<div class="episode-button" data-season="2" data-episode="14" style="display: none;">Episode 14 (j)</div>
+				<div class="episode-button" data-season="2" data-episode="15" style="display: none;">Episode 15 (d)</div>
+			</div>
+		</div>
+		<div class="cfg">
+			<div class="choose-stats">Choose stats:</div>
+			<div class="type-button" data-type="individual">individual</div>
+			<div class="type-button" data-type="teams">teams</div>
+			<div class="type-button" data-type="nations">nations</div>
+			<div>
+				<div class="e-button">tournament</div>
+				<div class="s-button">season</div>
+			</div>
+		</div>
+		<div class="direct-link-box">
+			<div class="choose-stats">Direct link to this page:</div>
+			<div class="direct-link"></div>
+		</div>
+		<hr size="1" />
+		<div>
+			<div class="results results-1-3">
+				
+<div class="tables individual teams nations e s tables-title">
+	2020-01-25 | DISTANCE | Public Event: ,,Lunar Lug-Nut Festilal''
+</div>
+<div class="tables individual e" style="display: none;">
+	<table border="1" bordercolor="CCCCCC" cellspacing="0" style="border-collapse: collapse;">
+		<thead>
+			<tr>
+				<th class="table-title" colspan="21">Season 1 episode 3 results | PEC 3 | Each player's worst results rejected: 2</th>
+			</tr>
+			<tr>
+				<th rowspan="2">Rank</th>
+				<th rowspan="2">Nick</th>
+				<th rowspan="2">Team</th>
+				<th rowspan="2">Nation</th>
+				<th rowspan="2">Score</th>
+				<th colspan="2">Night of Nian 1 </th>
+				<th colspan="2">Home Sweet Home 1</th>
+				<th colspan="2">Night of Nian 2 </th>
+				<th colspan="2">Home Sweet Home 2</th>
+				<th colspan="2">Nian Chase 1 </th>
+				<th colspan="2">Angry Beast 1</th>
+				<th colspan="2">Nian Chase 2 </th>
+				<th colspan="2">Angry Beast 2</th>
+			</tr>
+			<tr>
+				<th class="subtitle">DISTANCE</th>
+				<th class="subtitle">SCORE</th>
+				<th class="subtitle">DISTANCE</th>
+				<th class="subtitle">SCORE</th>
+				<th class="subtitle">DISTANCE</th>
+				<th class="subtitle">SCORE</th>
+				<th class="subtitle">DISTANCE</th>
+				<th class="subtitle">SCORE</th>
+				<th class="subtitle">DISTANCE</th>
+				<th class="subtitle">SCORE</th>
+				<th class="subtitle">DISTANCE</th>
+				<th class="subtitle">SCORE</th>
+				<th class="subtitle">DISTANCE</th>
+				<th class="subtitle">SCORE</th>
+				<th class="subtitle">DISTANCE</th>
+				<th class="subtitle">SCORE</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="place-1 row1">
+				<td class="rank"><img src="../../images/place-1.png" width="24" /></td>
+				<td class="nick"><span class="nick" data-dcid="603513361597988875">SZH</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="total-score">1742</td>
+				<td style="text-align: right; width: 50px;">1471</td>
+				<td class="score gold" style="text-align: center; width: 50px;">300</td>
+				<td style="text-align: right; width: 50px;">1408</td>
+				<td class="score gold" style="text-align: center; width: 50px;">300</td>
+				<td style="text-align: right; width: 50px;">1453</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">228</td>
+				<td style="text-align: right; width: 50px;">1409</td>
+				<td class="score gold" style="text-align: center; width: 50px;">300</td>
+				<td style="text-align: right; width: 50px;">1394</td>
+				<td class="score gold" style="text-align: center; width: 50px;">300</td>
+				<td style="text-align: right; width: 50px;">1574</td>
+				<td class="score bronze" style="text-align: center; width: 50px;">262</td>
+				<td style="text-align: right; width: 50px;">1309</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">173</td>
+				<td style="text-align: right; width: 50px;">1561</td>
+				<td class="score silver" style="text-align: center; width: 50px;">280</td>
+			</tr>
+			<tr class="place-2 row0">
+				<td class="rank"><img src="../../images/place-2.png" width="24" /></td>
+				<td class="nick"><span class="nick" data-dcid="611993016055496707">TuttoMio</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="total-score">1722</td>
+				<td style="text-align: right; width: 50px;">1471</td>
+				<td class="score gold" style="text-align: center; width: 50px;">300</td>
+				<td style="text-align: right; width: 50px;">1304</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">173</td>
+				<td style="text-align: right; width: 50px;">1463</td>
+				<td class="score silver" style="text-align: center; width: 50px;">280</td>
+				<td style="text-align: right; width: 50px;">1408</td>
+				<td class="score bronze" style="text-align: center; width: 50px;">262</td>
+				<td style="text-align: right; width: 50px;">1393</td>
+				<td class="score silver" style="text-align: center; width: 50px;">280</td>
+				<td style="text-align: right; width: 50px;">1582</td>
+				<td class="score gold" style="text-align: center; width: 50px;">300</td>
+				<td style="text-align: right; width: 50px;">1314</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">244</td>
+				<td style="text-align: right; width: 50px;">1578</td>
+				<td class="score gold" style="text-align: center; width: 50px;">300</td>
+			</tr>
+			<tr class="place-3 row1">
+				<td class="rank"><img src="../../images/place-3.png" width="24" /></td>
+				<td class="nick"><span class="nick" data-dcid="632330000342974494">CanisLupus</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="total-score">1558</td>
+				<td style="text-align: right; width: 50px;">1463</td>
+				<td class="score" style="text-align: center; width: 50px;">244</td>
+				<td style="text-align: right; width: 50px;">1407</td>
+				<td class="score silver" style="text-align: center; width: 50px;">280</td>
+				<td style="text-align: right; width: 50px;">1474</td>
+				<td class="score gold" style="text-align: center; width: 50px;">300</td>
+				<td style="text-align: right; width: 50px;">1405</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">213</td>
+				<td style="text-align: right; width: 50px;">1310</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">185</td>
+				<td style="text-align: right; width: 50px;">1566</td>
+				<td class="score" style="text-align: center; width: 50px;">228</td>
+				<td style="text-align: right; width: 50px;">1319</td>
+				<td class="score bronze" style="text-align: center; width: 50px;">262</td>
+				<td style="text-align: right; width: 50px;">1551</td>
+				<td class="score" style="text-align: center; width: 50px;">244</td>
+			</tr>
+			<tr class="place-4 row0">
+				<td class="rank">4</td>
+				<td class="nick"><span class="nick" data-dcid="587606384284270594">ktm#27</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="total-score">1528</td>
+				<td style="text-align: right; width: 50px;">-</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">140</td>
+				<td style="text-align: right; width: 50px;">-</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">150</td>
+				<td style="text-align: right; width: 50px;">1447</td>
+				<td class="score" style="text-align: center; width: 50px;">213</td>
+				<td style="text-align: right; width: 50px;">1405</td>
+				<td class="score" style="text-align: center; width: 50px;">213</td>
+				<td style="text-align: right; width: 50px;">1337</td>
+				<td class="score bronze" style="text-align: center; width: 50px;">262</td>
+				<td style="text-align: right; width: 50px;">1581</td>
+				<td class="score silver" style="text-align: center; width: 50px;">280</td>
+				<td style="text-align: right; width: 50px;">1392</td>
+				<td class="score silver" style="text-align: center; width: 50px;">280</td>
+				<td style="text-align: right; width: 50px;">1561</td>
+				<td class="score silver" style="text-align: center; width: 50px;">280</td>
+			</tr>
+			<tr class="place-5 row1">
+				<td class="rank">5</td>
+				<td class="nick"><span class="nick" data-dcid="572437303666933761">ravg</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="total-score">1351</td>
+				<td style="text-align: right; width: 50px;">1465</td>
+				<td class="score bronze" style="text-align: center; width: 50px;">262</td>
+				<td style="text-align: right; width: 50px;">1405</td>
+				<td class="score bronze" style="text-align: center; width: 50px;">262</td>
+				<td style="text-align: right; width: 50px;">1336</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">150</td>
+				<td style="text-align: right; width: 50px;">1407</td>
+				<td class="score" style="text-align: center; width: 50px;">228</td>
+				<td style="text-align: right; width: 50px;">1317</td>
+				<td class="score" style="text-align: center; width: 50px;">228</td>
+				<td style="text-align: right; width: 50px;">1523</td>
+				<td class="score" style="text-align: center; width: 50px;">173</td>
+				<td style="text-align: right; width: 50px;">1306</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">150</td>
+				<td style="text-align: right; width: 50px;">1527</td>
+				<td class="score" style="text-align: center; width: 50px;">198</td>
+			</tr>
+			<tr class="place-6 row0">
+				<td class="rank">6</td>
+				<td class="nick"><span class="nick" data-dcid="570301840617635843">!CP-RIP</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="total-score">1326</td>
+				<td style="text-align: right; width: 50px;">1451</td>
+				<td class="score" style="text-align: center; width: 50px;">228</td>
+				<td style="text-align: right; width: 50px;">1404</td>
+				<td class="score" style="text-align: center; width: 50px;">228</td>
+				<td style="text-align: right; width: 50px;">1455</td>
+				<td class="score" style="text-align: center; width: 50px;">244</td>
+				<td style="text-align: right; width: 50px;">1395</td>
+				<td class="score" style="text-align: center; width: 50px;">185</td>
+				<td style="text-align: right; width: 50px;">1313</td>
+				<td class="score" style="text-align: center; width: 50px;">213</td>
+				<td style="text-align: right; width: 50px;">1380</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">140</td>
+				<td style="text-align: right; width: 50px;">1313</td>
+				<td class="score" style="text-align: center; width: 50px;">228</td>
+				<td style="text-align: right; width: 50px;">1309</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">161</td>
+			</tr>
+			<tr class="place-7 row1">
+				<td class="rank">7</td>
+				<td class="nick"><span class="nick" data-dcid="580346947421077515">Żaba</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="total-score">1301</td>
+				<td style="text-align: right; width: 50px;">-</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">140</td>
+				<td style="text-align: right; width: 50px;">-</td>
+				<td class="score" style="text-align: center; width: 50px;">150</td>
+				<td style="text-align: right; width: 50px;">-</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">131</td>
+				<td style="text-align: right; width: 50px;">1409</td>
+				<td class="score gold" style="text-align: center; width: 50px;">300</td>
+				<td style="text-align: right; width: 50px;">1313</td>
+				<td class="score" style="text-align: center; width: 50px;">213</td>
+				<td style="text-align: right; width: 50px;">1539</td>
+				<td class="score" style="text-align: center; width: 50px;">198</td>
+				<td style="text-align: right; width: 50px;">1393</td>
+				<td class="score gold" style="text-align: center; width: 50px;">300</td>
+				<td style="text-align: right; width: 50px;">-</td>
+				<td class="score" style="text-align: center; width: 50px;">140</td>
+			</tr>
+			<tr class="place-8 row0">
+				<td class="rank">8</td>
+				<td class="nick"><span class="nick" data-dcid="254508144938582016">WojtanKiss</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="total-score">1252</td>
+				<td style="text-align: right; width: 50px;">1439</td>
+				<td class="score" style="text-align: center; width: 50px;">173</td>
+				<td style="text-align: right; width: 50px;">1235</td>
+				<td class="score" style="text-align: center; width: 50px;">161</td>
+				<td style="text-align: right; width: 50px;">1457</td>
+				<td class="score bronze" style="text-align: center; width: 50px;">262</td>
+				<td style="text-align: right; width: 50px;">1408</td>
+				<td class="score bronze" style="text-align: center; width: 50px;">262</td>
+				<td style="text-align: right; width: 50px;">-</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">140</td>
+				<td style="text-align: right; width: 50px;">1567</td>
+				<td class="score" style="text-align: center; width: 50px;">244</td>
+				<td style="text-align: right; width: 50px;">1294</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">140</td>
+				<td style="text-align: right; width: 50px;">1234</td>
+				<td class="score" style="text-align: center; width: 50px;">150</td>
+			</tr>
+			<tr class="place-9 row1">
+				<td class="rank">9</td>
+				<td class="nick"><span class="nick" data-dcid="612022012155789322">S!mon</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="total-score">1241</td>
+				<td style="text-align: right; width: 50px;">1450</td>
+				<td class="score" style="text-align: center; width: 50px;">213</td>
+				<td style="text-align: right; width: 50px;">1393</td>
+				<td class="score" style="text-align: center; width: 50px;">213</td>
+				<td style="text-align: right; width: 50px;">1439</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">173</td>
+				<td style="text-align: right; width: 50px;">1238</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">140</td>
+				<td style="text-align: right; width: 50px;">1334</td>
+				<td class="score" style="text-align: center; width: 50px;">244</td>
+				<td style="text-align: right; width: 50px;">1557</td>
+				<td class="score" style="text-align: center; width: 50px;">213</td>
+				<td style="text-align: right; width: 50px;">1310</td>
+				<td class="score" style="text-align: center; width: 50px;">185</td>
+				<td style="text-align: right; width: 50px;">1310</td>
+				<td class="score" style="text-align: center; width: 50px;">173</td>
+			</tr>
+			<tr class="place-10 row0">
+				<td class="rank">10</td>
+				<td class="nick"><span class="nick" data-dcid="571379154793005077">SCARAB+</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="total-score">1223</td>
+				<td style="text-align: right; width: 50px;">1450</td>
+				<td class="score" style="text-align: center; width: 50px;">213</td>
+				<td style="text-align: right; width: 50px;">1405</td>
+				<td class="score bronze" style="text-align: center; width: 50px;">262</td>
+				<td style="text-align: right; width: 50px;">1438</td>
+				<td class="score" style="text-align: center; width: 50px;">161</td>
+				<td style="text-align: right; width: 50px;">1234</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">131</td>
+				<td style="text-align: right; width: 50px;">1169</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">150</td>
+				<td style="text-align: right; width: 50px;">1493</td>
+				<td class="score" style="text-align: center; width: 50px;">161</td>
+				<td style="text-align: right; width: 50px;">1312</td>
+				<td class="score" style="text-align: center; width: 50px;">213</td>
+				<td style="text-align: right; width: 50px;">1533</td>
+				<td class="score" style="text-align: center; width: 50px;">213</td>
+			</tr>
+			<tr class="place-11 row1">
+				<td class="rank">11</td>
+				<td class="nick"><span class="nick" data-dcid="469562571033280513">|CT|Patryk</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="total-score">1127</td>
+				<td style="text-align: right; width: 50px;">1259</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">150</td>
+				<td style="text-align: right; width: 50px;">1317</td>
+				<td class="score" style="text-align: center; width: 50px;">198</td>
+				<td style="text-align: right; width: 50px;">1201</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">140</td>
+				<td style="text-align: right; width: 50px;">1323</td>
+				<td class="score" style="text-align: center; width: 50px;">161</td>
+				<td style="text-align: right; width: 50px;">1310</td>
+				<td class="score" style="text-align: center; width: 50px;">185</td>
+				<td style="text-align: right; width: 50px;">1527</td>
+				<td class="score" style="text-align: center; width: 50px;">185</td>
+				<td style="text-align: right; width: 50px;">1312</td>
+				<td class="score" style="text-align: center; width: 50px;">213</td>
+				<td style="text-align: right; width: 50px;">1493</td>
+				<td class="score" style="text-align: center; width: 50px;">185</td>
+			</tr>
+			<tr class="place-12 row0">
+				<td class="rank">12</td>
+				<td class="nick"><span class="nick" data-dcid="575420369494736924">KOKO</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="total-score">1084</td>
+				<td style="text-align: right; width: 50px;">1442</td>
+				<td class="score" style="text-align: center; width: 50px;">185</td>
+				<td style="text-align: right; width: 50px;">-</td>
+				<td class="score" style="text-align: center; width: 50px;">150</td>
+				<td style="text-align: right; width: 50px;">1445</td>
+				<td class="score" style="text-align: center; width: 50px;">198</td>
+				<td style="text-align: right; width: 50px;">1292</td>
+				<td class="score" style="text-align: center; width: 50px;">150</td>
+				<td style="text-align: right; width: 50px;">-</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">140</td>
+				<td style="text-align: right; width: 50px;">-</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">131</td>
+				<td style="text-align: right; width: 50px;">1309</td>
+				<td class="score" style="text-align: center; width: 50px;">173</td>
+				<td style="text-align: right; width: 50px;">1549</td>
+				<td class="score" style="text-align: center; width: 50px;">228</td>
+			</tr>
+			<tr class="place-13 row1">
+				<td class="rank">13</td>
+				<td class="nick"><span class="nick" data-dcid="570193367116414986">juchoo</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="total-score">1015</td>
+				<td style="text-align: right; width: 50px;">1300</td>
+				<td class="score" style="text-align: center; width: 50px;">161</td>
+				<td style="text-align: right; width: 50px;">1312</td>
+				<td class="score" style="text-align: center; width: 50px;">185</td>
+				<td style="text-align: right; width: 50px;">1444</td>
+				<td class="score" style="text-align: center; width: 50px;">185</td>
+				<td style="text-align: right; width: 50px;">1348</td>
+				<td class="score" style="text-align: center; width: 50px;">173</td>
+				<td style="text-align: right; width: 50px;">1247</td>
+				<td class="score" style="text-align: center; width: 50px;">161</td>
+				<td style="text-align: right; width: 50px;">1408</td>
+				<td class="score" style="text-align: center; width: 50px;">150</td>
+				<td style="text-align: right; width: 50px;">-</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">131</td>
+				<td style="text-align: right; width: 50px;">-</td>
+				<td class="score rejected" style="text-align: center; width: 50px;">140</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="tables individual s" style="display: none;">
+	<table border="1" bordercolor="CCCCCC" cellspacing="0" style="border-collapse: collapse;">
+		<thead>
+			<tr>
+				<th class="table-title" colspan="24">Season standings after episode 3 of 15</th>
+			</tr>
+			<tr>
+				<th rowspan="2">Rank</th>
+				<th rowspan="2">Nick</th>
+				<th rowspan="2">Team</th>
+				<th rowspan="2">Nation</th>
+				<th rowspan="2">Score change</th>
+				<th rowspan="2">Rank change</th>
+				<th colspan="3">Overall</th>
+				<th colspan="3">Distance</th>
+				<th colspan="3">Jump</th>
+				<th colspan="3">Stunts</th>
+				<th colspan="3">Time Attack</th>
+				<th colspan="3">Wheelie</th>
+			</tr>
+			<tr>
+				<th class="subtitle">PEC</th>
+				<th class="subtitle">SCORE</th>
+				<th class="subtitle">AVERAGE</th>
+				<th class="subtitle">PEC</th>
+				<th class="subtitle">SCORE</th>
+				<th class="subtitle">AVERAGE</th>
+				<th class="subtitle">PEC</th>
+				<th class="subtitle">SCORE</th>
+				<th class="subtitle">AVERAGE</th>
+				<th class="subtitle">PEC</th>
+				<th class="subtitle">SCORE</th>
+				<th class="subtitle">AVERAGE</th>
+				<th class="subtitle">PEC</th>
+				<th class="subtitle">SCORE</th>
+				<th class="subtitle">AVERAGE</th>
+				<th class="subtitle">PEC</th>
+				<th class="subtitle">SCORE</th>
+				<th class="subtitle">AVERAGE</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="place-1 row1">
+				<td class="rank"><img src="../../images/place-1.png" width="24" /></td>
+				<td class="nick"><span class="nick" data-dcid="611993016055496707">TuttoMio</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"><span class="plus">+280</span></td>
+				<td class="rank-change">-</td>
+				<td class="pec-count">3</td>
+				<td class="score gold" title="OVERALL GOLD">842</td>
+				<td class="avg">280.67</td>
+				<td class="pec-count">1</td>
+				<td class="score silver" title="DISTANCE SILVER">280</td>
+				<td class="avg">280.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">2</td>
+				<td class="score gold" title="WHEELIE GOLD">562</td>
+				<td class="avg">281.00</td>
+			</tr>
+			<tr class="place-2 row0">
+				<td class="rank"><img src="../../images/place-2.png" width="24" /></td>
+				<td class="nick"><span class="nick" data-dcid="572437303666933761">ravg</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"><span class="plus">+228</span></td>
+				<td class="rank-change">-</td>
+				<td class="pec-count">3</td>
+				<td class="score silver" title="OVERALL SILVER">693</td>
+				<td class="avg">231.00</td>
+				<td class="pec-count">1</td>
+				<td class="score top10" title="DISTANCE TOP10">228</td>
+				<td class="avg">228.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">2</td>
+				<td class="score silver" title="WHEELIE SILVER">465</td>
+				<td class="avg">232.50</td>
+			</tr>
+			<tr class="place-3 row1">
+				<td class="rank"><img src="../../images/place-3.png" width="24" /></td>
+				<td class="nick"><span class="nick" data-dcid="571379154793005077">SCARAB+</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"><span class="plus">+161</span></td>
+				<td class="rank-change">-</td>
+				<td class="pec-count">3</td>
+				<td class="score bronze" title="OVERALL BRONZE">587</td>
+				<td class="avg">195.67</td>
+				<td class="pec-count">1</td>
+				<td class="score top10" title="DISTANCE TOP10">161</td>
+				<td class="avg">161.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">2</td>
+				<td class="score bronze" title="WHEELIE BRONZE">426</td>
+				<td class="avg">213.00</td>
+			</tr>
+			<tr class="place-4 row0">
+				<td class="rank">4</td>
+				<td class="nick"><span class="nick" data-dcid="632330000342974494">CanisLupus</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"><span class="plus">+262</span></td>
+				<td class="rank-change"><span class="plus">+3</span></td>
+				<td class="pec-count">3</td>
+				<td class="score top30" title="OVERALL TOP30">575</td>
+				<td class="avg">191.67</td>
+				<td class="pec-count">1</td>
+				<td class="score bronze" title="DISTANCE BRONZE">262</td>
+				<td class="avg">262.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">2</td>
+				<td class="score top10" title="WHEELIE TOP10">313</td>
+				<td class="avg">156.50</td>
+			</tr>
+			<tr class="place-5 row1">
+				<td class="rank">5</td>
+				<td class="nick"><span class="nick" data-dcid="612022012155789322">S!mon</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"><span class="plus">+173</span></td>
+				<td class="rank-change"><span class="plus">+4</span></td>
+				<td class="pec-count">3</td>
+				<td class="score top30" title="OVERALL TOP30">477</td>
+				<td class="avg">159.00</td>
+				<td class="pec-count">1</td>
+				<td class="score top10" title="DISTANCE TOP10">173</td>
+				<td class="avg">173.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">2</td>
+				<td class="score top10" title="WHEELIE TOP10">304</td>
+				<td class="avg">152.00</td>
+			</tr>
+			<tr class="place-6 row0">
+				<td class="rank">6</td>
+				<td class="nick"><span class="nick" data-dcid="587606384284270594">ktm#27</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"><span class="plus">+244</span></td>
+				<td class="rank-change"><span class="plus">+9</span></td>
+				<td class="pec-count">2</td>
+				<td class="score top30" title="OVERALL TOP30">472</td>
+				<td class="avg">236.00</td>
+				<td class="pec-count">1</td>
+				<td class="score top10" title="DISTANCE TOP10">244</td>
+				<td class="avg">244.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">228</td>
+				<td class="avg">228.00</td>
+			</tr>
+			<tr class="place-7 row1">
+				<td class="rank">7</td>
+				<td class="nick"><span class="nick" data-dcid="603513361597988875">SZH</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"><span class="plus">+300</span></td>
+				<td class="rank-change"><span class="plus">+10</span></td>
+				<td class="pec-count">2</td>
+				<td class="score top30" title="OVERALL TOP30">461</td>
+				<td class="avg">230.50</td>
+				<td class="pec-count">1</td>
+				<td class="score gold" title="DISTANCE GOLD">300</td>
+				<td class="avg">300.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">161</td>
+				<td class="avg">161.00</td>
+			</tr>
+			<tr class="place-8 row0">
+				<td class="rank">8</td>
+				<td class="nick"><span class="nick" data-dcid="570193367116414986">juchoo</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"><span class="plus">+131</span></td>
+				<td class="rank-change"><span class="minus">-2</span></td>
+				<td class="pec-count">3</td>
+				<td class="score top30" title="OVERALL TOP30">446</td>
+				<td class="avg">148.67</td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">131</td>
+				<td class="avg">131.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">2</td>
+				<td class="score top10" title="WHEELIE TOP10">315</td>
+				<td class="avg">157.50</td>
+			</tr>
+			<tr class="place-9 row1">
+				<td class="rank">9</td>
+				<td class="nick"><span class="nick" data-dcid="580346947421077515">Żaba</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"><span class="plus">+198</span></td>
+				<td class="rank-change"><span class="plus">+7</span></td>
+				<td class="pec-count">3</td>
+				<td class="score top30" title="OVERALL TOP30">423</td>
+				<td class="avg">141.00</td>
+				<td class="pec-count">1</td>
+				<td class="score top10" title="DISTANCE TOP10">198</td>
+				<td class="avg">198.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">2</td>
+				<td class="score" title="">225</td>
+				<td class="avg">112.50</td>
+			</tr>
+			<tr class="place-10 row0">
+				<td class="rank">10</td>
+				<td class="nick"><span class="nick" data-dcid="570172488995307540">BUG!</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-6</span></td>
+				<td class="pec-count">2</td>
+				<td class="score top30" title="OVERALL TOP30">420</td>
+				<td class="avg">210.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">2</td>
+				<td class="score top10" title="WHEELIE TOP10">420</td>
+				<td class="avg">210.00</td>
+			</tr>
+			<tr class="place-11 row1">
+				<td class="rank">11</td>
+				<td class="nick"><span class="nick" data-dcid="607185013875802117">M4rchwia</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-6</span></td>
+				<td class="pec-count">2</td>
+				<td class="score top30" title="OVERALL TOP30">383</td>
+				<td class="avg">191.50</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">2</td>
+				<td class="score top10" title="WHEELIE TOP10">383</td>
+				<td class="avg">191.50</td>
+			</tr>
+			<tr class="place-12 row0">
+				<td class="rank">12</td>
+				<td class="nick"><span class="nick" data-dcid="623422658779807744">Carlos</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-4</span></td>
+				<td class="pec-count">2</td>
+				<td class="score top30" title="OVERALL TOP30">305</td>
+				<td class="avg">152.50</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">2</td>
+				<td class="score top10" title="WHEELIE TOP10">305</td>
+				<td class="avg">152.50</td>
+			</tr>
+			<tr class="place-13 row1">
+				<td class="rank">13</td>
+				<td class="nick"><span class="nick" data-dcid="686573522495209524">Mały</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-3</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">300</td>
+				<td class="avg">300.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score top10" title="WHEELIE TOP10">300</td>
+				<td class="avg">300.00</td>
+			</tr>
+			<tr class="place-14 row0">
+				<td class="rank">14</td>
+				<td class="nick"><span class="nick" data-dcid="571784349951721473">Sawik</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-3</span></td>
+				<td class="pec-count">2</td>
+				<td class="score top30" title="OVERALL TOP30">275</td>
+				<td class="avg">137.50</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">2</td>
+				<td class="score" title="">275</td>
+				<td class="avg">137.50</td>
+			</tr>
+			<tr class="place-15 row1">
+				<td class="rank">15</td>
+				<td class="nick"><span class="nick" data-dcid="574219918241693696">Bakajoko</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-3</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">262</td>
+				<td class="avg">262.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">262</td>
+				<td class="avg">262.00</td>
+			</tr>
+			<tr class="place-16 row0">
+				<td class="rank">16</td>
+				<td class="nick"><span class="nick" data-dcid="654728444613099520">W4!T3</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-3</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">244</td>
+				<td class="avg">244.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">244</td>
+				<td class="avg">244.00</td>
+			</tr>
+			<tr class="place-16 row0">
+				<td class="rank">16</td>
+				<td class="nick"><span class="nick" data-dcid="578636294603669504">Maciej</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-3</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">244</td>
+				<td class="avg">244.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">244</td>
+				<td class="avg">244.00</td>
+			</tr>
+			<tr class="place-18 row0">
+				<td class="rank">18</td>
+				<td class="nick"><span class="nick" data-dcid="469562571033280513">|CT|Patryk</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"><span class="plus">+150</span></td>
+				<td class="rank-change"><span class="plus">+7</span></td>
+				<td class="pec-count">2</td>
+				<td class="score top30" title="OVERALL TOP30">231</td>
+				<td class="avg">115.50</td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">150</td>
+				<td class="avg">150.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">81</td>
+				<td class="avg">81.00</td>
+			</tr>
+			<tr class="place-19 row1">
+				<td class="rank">19</td>
+				<td class="nick"><span class="nick" data-dcid="570301840617635843">!CP-RIP</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"><span class="plus">+213</span></td>
+				<td class="rank-change"><span class="rookie" title="season first tournament">*</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">213</td>
+				<td class="avg">213.00</td>
+				<td class="pec-count">1</td>
+				<td class="score top10" title="DISTANCE TOP10">213</td>
+				<td class="avg">213.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+			</tr>
+			<tr class="place-20 row0">
+				<td class="rank">20</td>
+				<td class="nick"><span class="nick" data-dcid="254508144938582016">WojtanKiss</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"><span class="plus">+185</span></td>
+				<td class="rank-change"><span class="rookie" title="season first tournament">*</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">185</td>
+				<td class="avg">185.00</td>
+				<td class="pec-count">1</td>
+				<td class="score top10" title="DISTANCE TOP10">185</td>
+				<td class="avg">185.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+			</tr>
+			<tr class="place-21 row1">
+				<td class="rank">21</td>
+				<td class="nick"><span class="nick" data-dcid="571371763368329227">KoronaKielce</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-3</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">150</td>
+				<td class="avg">150.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">150</td>
+				<td class="avg">150.00</td>
+			</tr>
+			<tr class="place-22 row0">
+				<td class="rank">22</td>
+				<td class="nick"><span class="nick" data-dcid="575420369494736924">KOKO</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"><span class="plus">+140</span></td>
+				<td class="rank-change"><span class="rookie" title="season first tournament">*</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">140</td>
+				<td class="avg">140.00</td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">140</td>
+				<td class="avg">140.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+			</tr>
+			<tr class="place-23 row1">
+				<td class="rank">23</td>
+				<td class="nick"><span class="nick" data-dcid="179">theCUSEK</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-4</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">131</td>
+				<td class="avg">131.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">131</td>
+				<td class="avg">131.00</td>
+			</tr>
+			<tr class="place-24 row0">
+				<td class="rank">24</td>
+				<td class="nick"><span class="nick" data-dcid="69">RoboCop</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-4</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">122</td>
+				<td class="avg">122.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">122</td>
+				<td class="avg">122.00</td>
+			</tr>
+			<tr class="place-24 row0">
+				<td class="rank">24</td>
+				<td class="nick"><span class="nick" data-dcid="580498178345009164">Ghost</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-4</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">122</td>
+				<td class="avg">122.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">122</td>
+				<td class="avg">122.00</td>
+			</tr>
+			<tr class="place-26 row0">
+				<td class="rank">26</td>
+				<td class="nick"><span class="nick" data-dcid="22">Ghost.2</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-4</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">114</td>
+				<td class="avg">114.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">114</td>
+				<td class="avg">114.00</td>
+			</tr>
+			<tr class="place-27 row1">
+				<td class="rank">27</td>
+				<td class="nick"><span class="nick" data-dcid="643707339882496001">|CT|MACIEJ </span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-4</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">99</td>
+				<td class="avg">99.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">99</td>
+				<td class="avg">99.00</td>
+			</tr>
+			<tr class="place-28 row0">
+				<td class="rank">28</td>
+				<td class="nick"><span class="nick" data-dcid="577969253320228885">Tomek</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-4</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">93</td>
+				<td class="avg">93.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">93</td>
+				<td class="avg">93.00</td>
+			</tr>
+			<tr class="place-29 row1">
+				<td class="rank">29</td>
+				<td class="nick"><span class="nick" data-dcid="572854767550988345">Łukasz</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-3</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">70</td>
+				<td class="avg">70.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">70</td>
+				<td class="avg">70.00</td>
+			</tr>
+			<tr class="place-30 row0">
+				<td class="rank">30</td>
+				<td class="nick"><span class="nick" data-dcid="570198435274162176">Majkel</span></td>
+				<td class="team">POLAN!E</td>
+				<td class="nation">-</td>
+				<td class="score-change"></td>
+				<td class="rank-change"><span class="minus">-3</span></td>
+				<td class="pec-count">1</td>
+				<td class="score top30" title="OVERALL TOP30">66</td>
+				<td class="avg">66.00</td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count"></td>
+				<td class="score" title=""></td>
+				<td class="avg"></td>
+				<td class="pec-count">1</td>
+				<td class="score" title="">66</td>
+				<td class="avg">66.00</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="tables teams e" style="display: none;">
+	<table style="width: 100%;">
+		<tr>
+			<th class="table-title">Season 1 episode 3 team results | PEC 3 | Each team can have a maximum of 4 players</th>
+		</tr>
+	</table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank gold" rowspan="2"><img src="../../images/place-1.png" width="24" /></td><td class="team gold">POLAN!E (A)</td><td class="score gold">6550</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="603513361597988875">SZH</span></td><td class="score">1742</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="611993016055496707">TuttoMio</span></td><td class="score">1722</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="632330000342974494">CanisLupus</span></td><td class="score">1558</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="587606384284270594">ktm#27</span></td><td class="score">1528</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank silver" rowspan="2"><img src="../../images/place-2.png" width="24" /></td><td class="team silver">POLAN!E (B)</td><td class="score silver">5230</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="572437303666933761">ravg</span></td><td class="score">1351</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="570301840617635843">!CP-RIP</span></td><td class="score">1326</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="580346947421077515">Żaba</span></td><td class="score">1301</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="254508144938582016">WojtanKiss</span></td><td class="score">1252</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank bronze" rowspan="2"><img src="../../images/place-3.png" width="24" /></td><td class="team bronze">POLAN!E (C)</td><td class="score bronze">4675</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="612022012155789322">S!mon</span></td><td class="score">1241</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="571379154793005077">SCARAB+</span></td><td class="score">1223</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="469562571033280513">|CT|Patryk</span></td><td class="score">1127</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="575420369494736924">KOKO</span></td><td class="score">1084</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">4</td><td class="team fourplus">POLAN!E (D)</td><td class="score fourplus">1015</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="570193367116414986">juchoo</span></td><td class="score">1015</td></tr></table></td></tr></table>
+</div>
+<div class="tables teams s" style="display: none;">
+	<table style="width: 100%;">
+		<tr>
+			<th class="table-title">Season team standings after episode 3 of 15</th>
+		</tr>
+	</table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank gold" rowspan="2"><img src="../../images/place-1.png" width="24" /></td><td class="team gold">POLAN!E (A)<div style="float: right; text-align: right;">3×PEC <span>(avg 4 players per PEC)</span></div></td><td class="score gold">20279</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="611993016055496707">TuttoMio</span></td><td class="pec"> 3×PEC</td><td class="score">5264</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="570172488995307540">BUG!</span></td><td class="pec"> 1×PEC</td><td class="score">2403</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="574219918241693696">Bakajoko</span></td><td class="pec"> 1×PEC</td><td class="score">2374</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="654728444613099520">W4!T3</span></td><td class="pec"> 1×PEC</td><td class="score">2270</td></tr><tr class="row1"><td class="rank">5.</td><td><span class="nick" data-dcid="603513361597988875">SZH</span></td><td class="pec"> 1×PEC</td><td class="score">1742</td></tr><tr class="row0"><td class="rank">6.</td><td><span class="nick" data-dcid="632330000342974494">CanisLupus</span></td><td class="pec"> 1×PEC</td><td class="score">1558</td></tr><tr class="row1"><td class="rank">7.</td><td><span class="nick" data-dcid="587606384284270594">ktm#27</span></td><td class="pec"> 1×PEC</td><td class="score">1528</td></tr><tr class="row0"><td class="rank">8.</td><td><span class="nick" data-dcid="686573522495209524">Mały</span></td><td class="pec"> 1×PEC</td><td class="score">1160</td></tr><tr class="row1"><td class="rank">9.</td><td><span class="nick" data-dcid="572437303666933761">ravg</span></td><td class="pec"> 1×PEC</td><td class="score">1017</td></tr><tr class="row0"><td class="rank">10.</td><td><span class="nick" data-dcid="578636294603669504">Maciej</span></td><td class="pec"> 1×PEC</td><td class="score">963</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank silver" rowspan="2"><img src="../../images/place-2.png" width="24" /></td><td class="team silver">POLAN!E (B)<div style="float: right; text-align: right;">3×PEC <span>(avg 4 players per PEC)</span></div></td><td class="score silver">17162</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="572437303666933761">ravg</span></td><td class="pec"> 2×PEC</td><td class="score">3352</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="571379154793005077">SCARAB+</span></td><td class="pec"> 2×PEC</td><td class="score">3031</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="607185013875802117">M4rchwia</span></td><td class="pec"> 2×PEC</td><td class="score">2912</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="587606384284270594">ktm#27</span></td><td class="pec"> 1×PEC</td><td class="score">2140</td></tr><tr class="row1"><td class="rank">5.</td><td><span class="nick" data-dcid="570301840617635843">!CP-RIP</span></td><td class="pec"> 1×PEC</td><td class="score">1326</td></tr><tr class="row0"><td class="rank">6.</td><td><span class="nick" data-dcid="580346947421077515">Żaba</span></td><td class="pec"> 1×PEC</td><td class="score">1301</td></tr><tr class="row1"><td class="rank">7.</td><td><span class="nick" data-dcid="254508144938582016">WojtanKiss</span></td><td class="pec"> 1×PEC</td><td class="score">1252</td></tr><tr class="row0"><td class="rank">8.</td><td><span class="nick" data-dcid="570193367116414986">juchoo</span></td><td class="pec"> 1×PEC</td><td class="score">950</td></tr><tr class="row1"><td class="rank">9.</td><td><span class="nick" data-dcid="623422658779807744">Carlos</span></td><td class="pec"> 1×PEC</td><td class="score">898</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank bronze" rowspan="2"><img src="../../images/place-3.png" width="24" /></td><td class="team bronze">POLAN!E (C)<div style="float: right; text-align: right;">3×PEC <span>(avg 4 players per PEC)</span></div></td><td class="score bronze">15465</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="612022012155789322">S!mon</span></td><td class="pec"> 2×PEC</td><td class="score">3223</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="632330000342974494">CanisLupus</span></td><td class="pec"> 2×PEC</td><td class="score">2630</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="603513361597988875">SZH</span></td><td class="pec"> 1×PEC</td><td class="score">1883</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="571371763368329227">KoronaKielce</span></td><td class="pec"> 1×PEC</td><td class="score">1865</td></tr><tr class="row1"><td class="rank">5.</td><td><span class="nick" data-dcid="571379154793005077">SCARAB+</span></td><td class="pec"> 1×PEC</td><td class="score">1223</td></tr><tr class="row0"><td class="rank">6.</td><td><span class="nick" data-dcid="469562571033280513">|CT|Patryk</span></td><td class="pec"> 1×PEC</td><td class="score">1127</td></tr><tr class="row1"><td class="rank">7.</td><td><span class="nick" data-dcid="575420369494736924">KOKO</span></td><td class="pec"> 1×PEC</td><td class="score">1084</td></tr><tr class="row0"><td class="rank">8.</td><td><span class="nick" data-dcid="571784349951721473">Sawik</span></td><td class="pec"> 1×PEC</td><td class="score">861</td></tr><tr class="row1"><td class="rank">9.</td><td><span class="nick" data-dcid="580346947421077515">Żaba</span></td><td class="pec"> 1×PEC</td><td class="score">812</td></tr><tr class="row0"><td class="rank">10.</td><td><span class="nick" data-dcid="570172488995307540">BUG!</span></td><td class="pec"> 1×PEC</td><td class="score">757</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">4</td><td class="team fourplus">POLAN!E (D)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">2.67</span> players per PEC)</span></div></td><td class="score fourplus">7919</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="179">theCUSEK</span></td><td class="pec"> 1×PEC</td><td class="score">1488</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="580498178345009164">Ghost</span></td><td class="pec"> 1×PEC</td><td class="score">1467</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="571784349951721473">Sawik</span></td><td class="pec"> 1×PEC</td><td class="score">1175</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="570193367116414986">juchoo</span></td><td class="pec"> 1×PEC</td><td class="score">1015</td></tr><tr class="row1"><td class="rank">5.</td><td><span class="nick" data-dcid="623422658779807744">Carlos</span></td><td class="pec"> 1×PEC</td><td class="score">921</td></tr><tr class="row0"><td class="rank">6.</td><td><span class="nick" data-dcid="612022012155789322">S!mon</span></td><td class="pec"> 1×PEC</td><td class="score">670</td></tr><tr class="row1"><td class="rank">7.</td><td><span class="nick" data-dcid="69">RoboCop</span></td><td class="pec"> 1×PEC</td><td class="score">610</td></tr><tr class="row0"><td class="rank">8.</td><td><span class="nick" data-dcid="22">Ghost.2</span></td><td class="pec"> 1×PEC</td><td class="score">573</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">5</td><td class="team fourplus">POLAN!E (E)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">1.33</span> players per PEC)</span></div></td><td class="score fourplus">2875</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="643707339882496001">|CT|MACIEJ </span></td><td class="pec"> 1×PEC</td><td class="score">865</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="577969253320228885">Tomek</span></td><td class="pec"> 1×PEC</td><td class="score">856</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="570193367116414986">juchoo</span></td><td class="pec"> 1×PEC</td><td class="score">604</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="469562571033280513">|CT|Patryk</span></td><td class="pec"> 1×PEC</td><td class="score">550</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">6</td><td class="team fourplus">POLAN!E (F)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">1</span> players per PEC)</span></div></td><td class="score fourplus">328</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="580346947421077515">Żaba</span></td><td class="pec"> 1×PEC</td><td class="score">122</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="572854767550988345">Łukasz</span></td><td class="pec"> 1×PEC</td><td class="score">107</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="570198435274162176">Majkel</span></td><td class="pec"> 1×PEC</td><td class="score">99</td></tr></table></td></tr></table>
+</div>
+<div class="tables nations e" style="display: none;">
+	<table style="width: 100%;">
+		<tr>
+			<th class="table-title">Season 1 episode 3 national team results | PEC 3 | Each national team can have a maximum of 4 players</th>
+		</tr>
+	</table>
+</div>
+<div class="tables nations s" style="display: none;">
+	<table style="width: 100%;">
+		<tr>
+			<th class="table-title">Season national team standings after episode 3 of 15</th>
+		</tr>
+	</table>
+</div>			</div>
+		</div>
+	</body>
+</html>

@@ -1,12 +1,16 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="pragma" content="no-cache" />
 		<title>HCR2 PEC stats - s2e3</title>
-		<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/style.min.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="../../js/script.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/vader/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="../../js/script.min.js"></script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180815415-1"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -14,15 +18,31 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-180815415-1');
 		</script>
+ -->
 	</head>
 	<body>
 		<div style="display: inline-block; min-height: 115px; width: 100%;">
-			<div class="title">Hill Climb Racing 2 PEC (Public Event Conquer) stats site / last update: 2020-10-19, 13:09 (<span style="font-style: italic;">Warsaw time</span>) / our official Discord server: <a href="https://discord.gg/gphE46A" target="_blank">https://discord.gg/gphE46A</a></div>
+			<div class="title">Hill Climb Racing 2 PEC (Public Event Conquer) stats site / last update: 2020-10-21, 10:57 (<span style="font-style: italic;">Warsaw time</span>) / our official Discord server: <a href="https://discord.gg/gphE46A" target="_blank">https://discord.gg/gphE46A</a></div>
 			<div>
 				<div class="season-button" data-season="1">Season 1</div>
 				<div class="season-button selected" data-season="2">Season 2</div>
+				<div class="alltime-button">All-time</div>
 			</div>
 			<div class="navi-buttons">
+				<div class="episode-button" data-season="1" data-episode="1" style="display: none;">Episode 1 (w)</div>
+				<div class="episode-button" data-season="1" data-episode="2" style="display: none;">Episode 2 (w)</div>
+				<div class="episode-button" data-season="1" data-episode="3" style="display: none;">Episode 3 (d)</div>
+				<div class="episode-button" data-season="1" data-episode="4" style="display: none;">Episode 4 (j)</div>
+				<div class="episode-button" data-season="1" data-episode="5" style="display: none;">Episode 5 (j)</div>
+				<div class="episode-button" data-season="1" data-episode="6" style="display: none;">Episode 6 (s)</div>
+				<div class="episode-button" data-season="1" data-episode="7" style="display: none;">Episode 7 (t)</div>
+				<div class="episode-button" data-season="1" data-episode="8" style="display: none;">Episode 8 (t)</div>
+				<div class="episode-button" data-season="1" data-episode="9" style="display: none;">Episode 9 (w)</div>
+				<div class="episode-button" data-season="1" data-episode="10" style="display: none;">Episode 10 (d)</div>
+				<div class="episode-button" data-season="1" data-episode="11" style="display: none;">Episode 11 (s)</div>
+				<div class="episode-button" data-season="1" data-episode="12" style="display: none;">Episode 12 (s)</div>
+				<div class="episode-button" data-season="1" data-episode="13" style="display: none;">Episode 13 (t)</div>
+				<div class="episode-button" data-season="1" data-episode="14" style="display: none;">Episode 14 (t)</div>
 				<div class="episode-button" data-season="1" data-episode="15" style="display: none;">Episode 15 (j)</div>
 				<div class="episode-button" data-season="2" data-episode="1" style="display: none;">Episode 1 (j)</div>
 				<div class="episode-button" data-season="2" data-episode="2" style="display: none;">Episode 2 (d)</div>
@@ -42,7 +62,7 @@
 			</div>
 		</div>
 		<div class="cfg">
-			<div style="font-size: 1.2em; letter-spacing: 2px;">Choose stats:</div>
+			<div class="choose-stats">Choose stats:</div>
 			<div class="type-button" data-type="individual">individual</div>
 			<div class="type-button" data-type="teams">teams</div>
 			<div class="type-button" data-type="nations">nations</div>
@@ -50,6 +70,10 @@
 				<div class="e-button">tournament</div>
 				<div class="s-button">season</div>
 			</div>
+		</div>
+		<div class="direct-link-box">
+			<div class="choose-stats">Direct link to this page:</div>
+			<div class="direct-link"></div>
 		</div>
 		<hr size="1" />
 		<div>
@@ -101,7 +125,7 @@
 		<tbody>
 			<tr class="place-1 row1">
 				<td class="rank"><img src="../../images/place-1.png" width="24" /></td>
-				<td class="nick">CanIntSpace</td>
+				<td class="nick"><span class="nick" data-dcid="440142870414884914">CanIntSpace</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="total-score">1486</td>
@@ -124,7 +148,7 @@
 			</tr>
 			<tr class="place-2 row0">
 				<td class="rank"><img src="../../images/place-2.png" width="24" /></td>
-				<td class="nick">Cool Guy</td>
+				<td class="nick"><span class="nick" data-dcid="729046081115127838">Cool Guy</span></td>
 				<td class="team">Unity</td>
 				<td class="nation">-</td>
 				<td class="total-score">1469</td>
@@ -147,7 +171,7 @@
 			</tr>
 			<tr class="place-3 row1">
 				<td class="rank"><img src="../../images/place-3.png" width="24" /></td>
-				<td class="nick">BabaJaga</td>
+				<td class="nick"><span class="nick" data-dcid="642090476836749352">BabaJaga</span></td>
 				<td class="team">NiePoBani</td>
 				<td class="nation">-</td>
 				<td class="total-score">1398</td>
@@ -170,7 +194,7 @@
 			</tr>
 			<tr class="place-4 row0">
 				<td class="rank">4</td>
-				<td class="nick">Juloko</td>
+				<td class="nick"><span class="nick" data-dcid="594596245507670069">Juloko</span></td>
 				<td class="team">Wildlifers</td>
 				<td class="nation">-</td>
 				<td class="total-score">1396</td>
@@ -193,7 +217,7 @@
 			</tr>
 			<tr class="place-5 row1">
 				<td class="rank">5</td>
-				<td class="nick">Craggy</td>
+				<td class="nick"><span class="nick" data-dcid="583694017997308136">Craggy</span></td>
 				<td class="team">Discord</td>
 				<td class="nation">-</td>
 				<td class="total-score">1347</td>
@@ -216,7 +240,7 @@
 			</tr>
 			<tr class="place-6 row0">
 				<td class="rank">6</td>
-				<td class="nick">Turtle</td>
+				<td class="nick"><span class="nick" data-dcid="257136799468486656">Turtle</span></td>
 				<td class="team">Wildlifers</td>
 				<td class="nation">-</td>
 				<td class="total-score">1346</td>
@@ -239,7 +263,7 @@
 			</tr>
 			<tr class="place-7 row1">
 				<td class="rank">7</td>
-				<td class="nick">Mbow</td>
+				<td class="nick"><span class="nick" data-dcid="240220238891843586">Mbow</span></td>
 				<td class="team">ITALIA</td>
 				<td class="nation">-</td>
 				<td class="total-score">1251</td>
@@ -262,7 +286,7 @@
 			</tr>
 			<tr class="place-8 row0">
 				<td class="rank">8</td>
-				<td class="nick">McM</td>
+				<td class="nick"><span class="nick" data-dcid="595018077016555530">McM</span></td>
 				<td class="team">InFusion</td>
 				<td class="nation">-</td>
 				<td class="total-score">1138</td>
@@ -285,7 +309,7 @@
 			</tr>
 			<tr class="place-9 row1">
 				<td class="rank">9</td>
-				<td class="nick">U|Razor</td>
+				<td class="nick"><span class="nick" data-dcid="283610109555376129">U|Razor</span></td>
 				<td class="team">Unity</td>
 				<td class="nation">-</td>
 				<td class="total-score">1126</td>
@@ -308,7 +332,7 @@
 			</tr>
 			<tr class="place-10 row0">
 				<td class="rank">10</td>
-				<td class="nick">PL|Gladki</td>
+				<td class="nick"><span class="nick" data-dcid="614804192426721294">PL|Gladki</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="total-score">1113</td>
@@ -331,7 +355,7 @@
 			</tr>
 			<tr class="place-11 row1">
 				<td class="rank">11</td>
-				<td class="nick">ypsylone</td>
+				<td class="nick"><span class="nick" data-dcid="584016012853379091">ypsylone</span></td>
 				<td class="team">CZE&SVK</td>
 				<td class="nation">-</td>
 				<td class="total-score">1071</td>
@@ -354,7 +378,7 @@
 			</tr>
 			<tr class="place-12 row0">
 				<td class="rank">12</td>
-				<td class="nick">Magic Fans</td>
+				<td class="nick"><span class="nick" data-dcid="600773365321564160">Magic Fans</span></td>
 				<td class="team">French Power</td>
 				<td class="nation">-</td>
 				<td class="total-score">971</td>
@@ -377,7 +401,7 @@
 			</tr>
 			<tr class="place-12 row0">
 				<td class="rank">12</td>
-				<td class="nick">Velkyrin</td>
+				<td class="nick"><span class="nick" data-dcid="351108931919151105">Velkyrin</span></td>
 				<td class="team">Maitres RN</td>
 				<td class="nation">-</td>
 				<td class="total-score">971</td>
@@ -400,7 +424,7 @@
 			</tr>
 			<tr class="place-14 row0">
 				<td class="rank">14</td>
-				<td class="nick">miszehu</td>
+				<td class="nick"><span class="nick" data-dcid="574280579886088193">miszehu</span></td>
 				<td class="team">InFusion</td>
 				<td class="nation">-</td>
 				<td class="total-score">929</td>
@@ -423,7 +447,7 @@
 			</tr>
 			<tr class="place-15 row1">
 				<td class="rank">15</td>
-				<td class="nick">Mlyko21</td>
+				<td class="nick"><span class="nick" data-dcid="650399111929135109">Mlyko21</span></td>
 				<td class="team">Team Poland</td>
 				<td class="nation">-</td>
 				<td class="total-score">891</td>
@@ -446,7 +470,7 @@
 			</tr>
 			<tr class="place-16 row0">
 				<td class="rank">16</td>
-				<td class="nick">Kander Jr</td>
+				<td class="nick"><span class="nick" data-dcid="569905447440613390">Kander Jr</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="total-score">845</td>
@@ -469,7 +493,7 @@
 			</tr>
 			<tr class="place-17 row1">
 				<td class="rank">17</td>
-				<td class="nick">Neko818</td>
+				<td class="nick"><span class="nick" data-dcid="598470333976018955">Neko818</span></td>
 				<td class="team">InFusion</td>
 				<td class="nation">-</td>
 				<td class="total-score">806</td>
@@ -492,7 +516,7 @@
 			</tr>
 			<tr class="place-18 row0">
 				<td class="rank">18</td>
-				<td class="nick">WojtanKISS</td>
+				<td class="nick"><span class="nick" data-dcid="254508144938582016">WojtanKISS</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="total-score">755</td>
@@ -515,7 +539,7 @@
 			</tr>
 			<tr class="place-19 row1">
 				<td class="rank">19</td>
-				<td class="nick">Canis Lupus</td>
+				<td class="nick"><span class="nick" data-dcid="632330000342974494">Canis Lupus</span></td>
 				<td class="team">Unity</td>
 				<td class="nation">-</td>
 				<td class="total-score">745</td>
@@ -538,7 +562,7 @@
 			</tr>
 			<tr class="place-20 row0">
 				<td class="rank">20</td>
-				<td class="nick">[PW] JChod</td>
+				<td class="nick"><span class="nick" data-dcid="494161932190744577">[PW] JChod</span></td>
 				<td class="team">Polish Warriors</td>
 				<td class="nation">-</td>
 				<td class="total-score">703</td>
@@ -561,7 +585,7 @@
 			</tr>
 			<tr class="place-21 row1">
 				<td class="rank">21</td>
-				<td class="nick">Hubert</td>
+				<td class="nick"><span class="nick" data-dcid="631120488239857665">Hubert</span></td>
 				<td class="team">InFusion</td>
 				<td class="nation">-</td>
 				<td class="total-score">631</td>
@@ -584,7 +608,7 @@
 			</tr>
 			<tr class="place-22 row0">
 				<td class="rank">22</td>
-				<td class="nick">(PR)Avitohol</td>
+				<td class="nick"><span class="nick" data-dcid="482468633784614912">(PR)Avitohol</span></td>
 				<td class="team">Team Harold</td>
 				<td class="nation">-</td>
 				<td class="total-score">616</td>
@@ -607,7 +631,7 @@
 			</tr>
 			<tr class="place-23 row1">
 				<td class="rank">23</td>
-				<td class="nick">Mikos</td>
+				<td class="nick"><span class="nick" data-dcid="580381168806133782">Mikos</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="total-score">581</td>
@@ -630,7 +654,7 @@
 			</tr>
 			<tr class="place-24 row0">
 				<td class="rank">24</td>
-				<td class="nick">[TP]Ramzo</td>
+				<td class="nick"><span class="nick" data-dcid="427128877681475585">[TP]Ramzo</span></td>
 				<td class="team">Team Poland</td>
 				<td class="nation">-</td>
 				<td class="total-score">545</td>
@@ -653,7 +677,7 @@
 			</tr>
 			<tr class="place-25 row1">
 				<td class="rank">25</td>
-				<td class="nick">[TP] Mirek</td>
+				<td class="nick"><span class="nick" data-dcid="632288789775253536">[TP] Mirek</span></td>
 				<td class="team">Team Poland</td>
 				<td class="nation">-</td>
 				<td class="total-score">525</td>
@@ -676,7 +700,7 @@
 			</tr>
 			<tr class="place-26 row0">
 				<td class="rank">26</td>
-				<td class="nick">ktm 27</td>
+				<td class="nick"><span class="nick" data-dcid="587606384284270594">ktm 27</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="total-score">477</td>
@@ -699,7 +723,7 @@
 			</tr>
 			<tr class="place-27 row1">
 				<td class="rank">27</td>
-				<td class="nick">HOT</td>
+				<td class="nick"><span class="nick" data-dcid="654728444613099520">HOT</span></td>
 				<td class="team">PiWEX</td>
 				<td class="nation">-</td>
 				<td class="total-score">455</td>
@@ -722,7 +746,7 @@
 			</tr>
 			<tr class="place-28 row0">
 				<td class="rank">28</td>
-				<td class="nick">QUATTRO</td>
+				<td class="nick"><span class="nick" data-dcid="631558668315394049">QUATTRO</span></td>
 				<td class="team">Team Poland</td>
 				<td class="nation">-</td>
 				<td class="total-score">447</td>
@@ -745,7 +769,7 @@
 			</tr>
 			<tr class="place-29 row1">
 				<td class="rank">29</td>
-				<td class="nick">Oaker YT</td>
+				<td class="nick"><span class="nick" data-dcid="339808598433464336">Oaker YT</span></td>
 				<td class="team">CZE&SVK</td>
 				<td class="nation">-</td>
 				<td class="total-score">441</td>
@@ -768,7 +792,7 @@
 			</tr>
 			<tr class="place-30 row0">
 				<td class="rank">30</td>
-				<td class="nick">Żaba</td>
+				<td class="nick"><span class="nick" data-dcid="580346947421077515">Żaba</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="total-score">399</td>
@@ -791,7 +815,7 @@
 			</tr>
 			<tr class="place-31 row1">
 				<td class="rank">31</td>
-				<td class="nick">sobyl</td>
+				<td class="nick"><span class="nick" data-dcid="641036495087599617">sobyl</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="total-score">391</td>
@@ -814,7 +838,7 @@
 			</tr>
 			<tr class="place-32 row0">
 				<td class="rank">32</td>
-				<td class="nick">speed_man1</td>
+				<td class="nick"><span class="nick" data-dcid="578639532921192448">speed_man1</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="total-score">339</td>
@@ -837,7 +861,7 @@
 			</tr>
 			<tr class="place-33 row1">
 				<td class="rank">33</td>
-				<td class="nick">S!mon</td>
+				<td class="nick"><span class="nick" data-dcid="612022012155789322">S!mon</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="total-score">334</td>
@@ -860,7 +884,7 @@
 			</tr>
 			<tr class="place-34 row0">
 				<td class="rank">34</td>
-				<td class="nick">Maciej</td>
+				<td class="nick"><span class="nick" data-dcid="578636294603669504">Maciej</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="total-score">329</td>
@@ -883,7 +907,7 @@
 			</tr>
 			<tr class="place-35 row1">
 				<td class="rank">35</td>
-				<td class="nick">SCARAB</td>
+				<td class="nick"><span class="nick" data-dcid="571379154793005077">SCARAB</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="total-score">327</td>
@@ -906,7 +930,7 @@
 			</tr>
 			<tr class="place-36 row0">
 				<td class="rank">36</td>
-				<td class="nick">skurwiel</td>
+				<td class="nick"><span class="nick" data-dcid="598194474086039566">skurwiel</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="total-score">264</td>
@@ -929,7 +953,7 @@
 			</tr>
 			<tr class="place-37 row1">
 				<td class="rank">37</td>
-				<td class="nick">Gadzzet</td>
+				<td class="nick"><span class="nick" data-dcid="587302538718609428">Gadzzet</span></td>
 				<td class="team">Team Poland</td>
 				<td class="nation">-</td>
 				<td class="total-score">244</td>
@@ -952,7 +976,7 @@
 			</tr>
 			<tr class="place-38 row0">
 				<td class="rank">38</td>
-				<td class="nick">Kabura</td>
+				<td class="nick"><span class="nick" data-dcid="577792050423005195">Kabura</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="total-score">226</td>
@@ -975,7 +999,7 @@
 			</tr>
 			<tr class="place-39 row1">
 				<td class="rank">39</td>
-				<td class="nick">DonKamilo</td>
+				<td class="nick"><span class="nick" data-dcid="624312402846154772">DonKamilo</span></td>
 				<td class="team">Stara Gwardia</td>
 				<td class="nation">-</td>
 				<td class="total-score">203</td>
@@ -998,7 +1022,7 @@
 			</tr>
 			<tr class="place-40 row0">
 				<td class="rank">40</td>
-				<td class="nick">|DP|WzN</td>
+				<td class="nick"><span class="nick" data-dcid="138">|DP|WzN</span></td>
 				<td class="team">Drogowi Patole</td>
 				<td class="nation">-</td>
 				<td class="total-score">177</td>
@@ -1066,7 +1090,7 @@
 		<tbody>
 			<tr class="place-1 row1">
 				<td class="rank"><img src="../../images/place-1.png" width="24" /></td>
-				<td class="nick">Cool Guy</td>
+				<td class="nick"><span class="nick" data-dcid="729046081115127838">Cool Guy</span></td>
 				<td class="team">Unity</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+280</span></td>
@@ -1092,7 +1116,7 @@
 			</tr>
 			<tr class="place-2 row0">
 				<td class="rank"><img src="../../images/place-2.png" width="24" /></td>
-				<td class="nick">Craggy</td>
+				<td class="nick"><span class="nick" data-dcid="583694017997308136">Craggy</span></td>
 				<td class="team">Discord</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+228</span></td>
@@ -1118,7 +1142,7 @@
 			</tr>
 			<tr class="place-2 row0">
 				<td class="rank"><img src="../../images/place-2.png" width="24" /></td>
-				<td class="nick">CanIntSpace</td>
+				<td class="nick"><span class="nick" data-dcid="440142870414884914">CanIntSpace</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+300</span></td>
@@ -1144,7 +1168,7 @@
 			</tr>
 			<tr class="place-4 row0">
 				<td class="rank">4</td>
-				<td class="nick">Mbow</td>
+				<td class="nick"><span class="nick" data-dcid="240220238891843586">Mbow</span></td>
 				<td class="team">ITALIA</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+198</span></td>
@@ -1170,7 +1194,7 @@
 			</tr>
 			<tr class="place-5 row1">
 				<td class="rank">5</td>
-				<td class="nick">Turtle</td>
+				<td class="nick"><span class="nick" data-dcid="257136799468486656">Turtle</span></td>
 				<td class="team">Wildlifers</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+213</span></td>
@@ -1196,7 +1220,7 @@
 			</tr>
 			<tr class="place-6 row0">
 				<td class="rank">6</td>
-				<td class="nick">BabaJaga</td>
+				<td class="nick"><span class="nick" data-dcid="642090476836749352">BabaJaga</span></td>
 				<td class="team">NiePoBani</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+262</span></td>
@@ -1222,7 +1246,7 @@
 			</tr>
 			<tr class="place-7 row1">
 				<td class="rank">7</td>
-				<td class="nick">Mikos</td>
+				<td class="nick"><span class="nick" data-dcid="580381168806133782">Mikos</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+66</span></td>
@@ -1248,7 +1272,7 @@
 			</tr>
 			<tr class="place-8 row0">
 				<td class="rank">8</td>
-				<td class="nick">PL|Gladki</td>
+				<td class="nick"><span class="nick" data-dcid="614804192426721294">PL|Gladki</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+161</span></td>
@@ -1274,7 +1298,7 @@
 			</tr>
 			<tr class="place-9 row1">
 				<td class="rank">9</td>
-				<td class="nick">McM</td>
+				<td class="nick"><span class="nick" data-dcid="595018077016555530">McM</span></td>
 				<td class="team">InFusion</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+185</span></td>
@@ -1300,7 +1324,7 @@
 			</tr>
 			<tr class="place-10 row0">
 				<td class="rank">10</td>
-				<td class="nick">U|Razor</td>
+				<td class="nick"><span class="nick" data-dcid="283610109555376129">U|Razor</span></td>
 				<td class="team">Unity</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+173</span></td>
@@ -1326,7 +1350,7 @@
 			</tr>
 			<tr class="place-11 row1">
 				<td class="rank">11</td>
-				<td class="nick">(PR)Avitohol</td>
+				<td class="nick"><span class="nick" data-dcid="482468633784614912">(PR)Avitohol</span></td>
 				<td class="team">Team Harold</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+70</span></td>
@@ -1352,7 +1376,7 @@
 			</tr>
 			<tr class="place-12 row0">
 				<td class="rank">12</td>
-				<td class="nick">Magic Fans</td>
+				<td class="nick"><span class="nick" data-dcid="600773365321564160">Magic Fans</span></td>
 				<td class="team">French Power</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+140</span></td>
@@ -1378,7 +1402,7 @@
 			</tr>
 			<tr class="place-13 row1">
 				<td class="rank">13</td>
-				<td class="nick">WojtanKISS</td>
+				<td class="nick"><span class="nick" data-dcid="254508144938582016">WojtanKISS</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+93</span></td>
@@ -1404,7 +1428,7 @@
 			</tr>
 			<tr class="place-14 row0">
 				<td class="rank">14</td>
-				<td class="nick">Juloko</td>
+				<td class="nick"><span class="nick" data-dcid="594596245507670069">Juloko</span></td>
 				<td class="team">Wildlifers</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+244</span></td>
@@ -1430,7 +1454,7 @@
 			</tr>
 			<tr class="place-15 row1">
 				<td class="rank">15</td>
-				<td class="nick">Velkyrin</td>
+				<td class="nick"><span class="nick" data-dcid="351108931919151105">Velkyrin</span></td>
 				<td class="team">Maitres RN</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+140</span></td>
@@ -1456,7 +1480,7 @@
 			</tr>
 			<tr class="place-16 row0">
 				<td class="rank">16</td>
-				<td class="nick">[TP] Mirek</td>
+				<td class="nick"><span class="nick" data-dcid="632288789775253536">[TP] Mirek</span></td>
 				<td class="team">Team Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+57</span></td>
@@ -1482,7 +1506,7 @@
 			</tr>
 			<tr class="place-17 row1">
 				<td class="rank">17</td>
-				<td class="nick">Canis Lupus</td>
+				<td class="nick"><span class="nick" data-dcid="632330000342974494">Canis Lupus</span></td>
 				<td class="team">Unity</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+87</span></td>
@@ -1508,7 +1532,7 @@
 			</tr>
 			<tr class="place-18 row0">
 				<td class="rank">18</td>
-				<td class="nick">Mlyko21</td>
+				<td class="nick"><span class="nick" data-dcid="650399111929135109">Mlyko21</span></td>
 				<td class="team">Team Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+114</span></td>
@@ -1534,7 +1558,7 @@
 			</tr>
 			<tr class="place-19 row1">
 				<td class="rank">19</td>
-				<td class="nick">Neko818</td>
+				<td class="nick"><span class="nick" data-dcid="598470333976018955">Neko818</span></td>
 				<td class="team">InFusion</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+99</span></td>
@@ -1560,7 +1584,7 @@
 			</tr>
 			<tr class="place-20 row0">
 				<td class="rank">20</td>
-				<td class="nick">HoThumbs</td>
+				<td class="nick"><span class="nick" data-dcid="572100720875143168">HoThumbs</span></td>
 				<td class="team">Wildlifers</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -1586,7 +1610,7 @@
 			</tr>
 			<tr class="place-21 row1">
 				<td class="rank">21</td>
-				<td class="nick">wingy</td>
+				<td class="nick"><span class="nick" data-dcid="329973762071986178">wingy</span></td>
 				<td class="team">Greek Riders</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -1612,7 +1636,7 @@
 			</tr>
 			<tr class="place-22 row0">
 				<td class="rank">22</td>
-				<td class="nick">QUATTRO</td>
+				<td class="nick"><span class="nick" data-dcid="631558668315394049">QUATTRO</span></td>
 				<td class="team">Team Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+47</span></td>
@@ -1638,7 +1662,7 @@
 			</tr>
 			<tr class="place-23 row1">
 				<td class="rank">23</td>
-				<td class="nick">miszehu</td>
+				<td class="nick"><span class="nick" data-dcid="574280579886088193">miszehu</span></td>
 				<td class="team">InFusion</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+122</span></td>
@@ -1664,7 +1688,7 @@
 			</tr>
 			<tr class="place-24 row0">
 				<td class="rank">24</td>
-				<td class="nick">Żaba</td>
+				<td class="nick"><span class="nick" data-dcid="580346947421077515">Żaba</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+41</span></td>
@@ -1690,7 +1714,7 @@
 			</tr>
 			<tr class="place-25 row1">
 				<td class="rank">25</td>
-				<td class="nick">Maciej</td>
+				<td class="nick"><span class="nick" data-dcid="578636294603669504">Maciej</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+31</span></td>
@@ -1716,7 +1740,7 @@
 			</tr>
 			<tr class="place-26 row0">
 				<td class="rank">26</td>
-				<td class="nick">SZH</td>
+				<td class="nick"><span class="nick" data-dcid="603513361597988875">SZH</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -1742,7 +1766,7 @@
 			</tr>
 			<tr class="place-27 row1">
 				<td class="rank">27</td>
-				<td class="nick">ravg</td>
+				<td class="nick"><span class="nick" data-dcid="572437303666933761">ravg</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -1768,7 +1792,7 @@
 			</tr>
 			<tr class="place-27 row1">
 				<td class="rank">27</td>
-				<td class="nick">ypsylone</td>
+				<td class="nick"><span class="nick" data-dcid="584016012853379091">ypsylone</span></td>
 				<td class="team">CZE&SVK</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+150</span></td>
@@ -1794,7 +1818,7 @@
 			</tr>
 			<tr class="place-29 row1">
 				<td class="rank">29</td>
-				<td class="nick">JR</td>
+				<td class="nick"><span class="nick" data-dcid="570694723572858881">JR</span></td>
 				<td class="team">Greek Riders</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -1820,7 +1844,7 @@
 			</tr>
 			<tr class="place-30 row0">
 				<td class="rank">30</td>
-				<td class="nick">JR</td>
+				<td class="nick"><span class="nick" data-dcid="572002666713055232">JR</span></td>
 				<td class="team">Unity</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -1846,7 +1870,7 @@
 			</tr>
 			<tr class="place-31 row1">
 				<td class="rank">31</td>
-				<td class="nick">sobyl</td>
+				<td class="nick"><span class="nick" data-dcid="641036495087599617">sobyl</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+38</span></td>
@@ -1872,7 +1896,7 @@
 			</tr>
 			<tr class="place-32 row0">
 				<td class="rank">32</td>
-				<td class="nick">ktm 27</td>
+				<td class="nick"><span class="nick" data-dcid="587606384284270594">ktm 27</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+54</span></td>
@@ -1898,7 +1922,7 @@
 			</tr>
 			<tr class="place-33 row1">
 				<td class="rank">33</td>
-				<td class="nick">Vadyon</td>
+				<td class="nick"><span class="nick" data-dcid="240891652326162433">Vadyon</span></td>
 				<td class="team">Discord</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -1924,7 +1948,7 @@
 			</tr>
 			<tr class="place-34 row0">
 				<td class="rank">34</td>
-				<td class="nick">M4rchwia</td>
+				<td class="nick"><span class="nick" data-dcid="607185013875802117">M4rchwia</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -1950,7 +1974,7 @@
 			</tr>
 			<tr class="place-35 row1">
 				<td class="rank">35</td>
-				<td class="nick">Oaker YT</td>
+				<td class="nick"><span class="nick" data-dcid="339808598433464336">Oaker YT</span></td>
 				<td class="team">CZE&SVK</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+44</span></td>
@@ -1976,7 +2000,7 @@
 			</tr>
 			<tr class="place-36 row0">
 				<td class="rank">36</td>
-				<td class="nick">speed_man1</td>
+				<td class="nick"><span class="nick" data-dcid="578639532921192448">speed_man1</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+35</span></td>
@@ -2002,7 +2026,7 @@
 			</tr>
 			<tr class="place-37 row1">
 				<td class="rank">37</td>
-				<td class="nick">Amator</td>
+				<td class="nick"><span class="nick" data-dcid="600937863160397824">Amator</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2028,7 +2052,7 @@
 			</tr>
 			<tr class="place-37 row1">
 				<td class="rank">37</td>
-				<td class="nick">frik007</td>
+				<td class="nick"><span class="nick" data-dcid="597002539292033036">frik007</span></td>
 				<td class="team">Wildlifers</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2054,7 +2078,7 @@
 			</tr>
 			<tr class="place-39 row1">
 				<td class="rank">39</td>
-				<td class="nick">Lucky</td>
+				<td class="nick"><span class="nick" data-dcid="665629966406254622">Lucky</span></td>
 				<td class="team">PowerFour</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2080,7 +2104,7 @@
 			</tr>
 			<tr class="place-40 row0">
 				<td class="rank">40</td>
-				<td class="nick">[PW] JChod</td>
+				<td class="nick"><span class="nick" data-dcid="494161932190744577">[PW] JChod</span></td>
 				<td class="team">Polish Warriors</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+81</span></td>
@@ -2106,7 +2130,7 @@
 			</tr>
 			<tr class="place-41 row1">
 				<td class="rank">41</td>
-				<td class="nick">Kander Jr</td>
+				<td class="nick"><span class="nick" data-dcid="569905447440613390">Kander Jr</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+107</span></td>
@@ -2132,7 +2156,7 @@
 			</tr>
 			<tr class="place-42 row0">
 				<td class="rank">42</td>
-				<td class="nick">EMPiRE</td>
+				<td class="nick"><span class="nick" data-dcid="677965442194604050">EMPiRE</span></td>
 				<td class="team">Wildlifers</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2158,7 +2182,7 @@
 			</tr>
 			<tr class="place-43 row1">
 				<td class="rank">43</td>
-				<td class="nick">Gadzzet</td>
+				<td class="nick"><span class="nick" data-dcid="587302538718609428">Gadzzet</span></td>
 				<td class="team">Team Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+25</span></td>
@@ -2184,7 +2208,7 @@
 			</tr>
 			<tr class="place-44 row0">
 				<td class="rank">44</td>
-				<td class="nick">Shredder</td>
+				<td class="nick"><span class="nick" data-dcid="574699179100733441">Shredder</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2210,7 +2234,7 @@
 			</tr>
 			<tr class="place-45 row1">
 				<td class="rank">45</td>
-				<td class="nick">IT|Sampdoria</td>
+				<td class="nick"><span class="nick" data-dcid="574572283859959827">IT|Sampdoria</span></td>
 				<td class="team">ITALIA</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2236,7 +2260,7 @@
 			</tr>
 			<tr class="place-46 row0">
 				<td class="rank">46</td>
-				<td class="nick">HOT</td>
+				<td class="nick"><span class="nick" data-dcid="654728444613099520">HOT</span></td>
 				<td class="team">PiWEX</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+50</span></td>
@@ -2262,7 +2286,7 @@
 			</tr>
 			<tr class="place-47 row1">
 				<td class="rank">47</td>
-				<td class="nick">Hubert</td>
+				<td class="nick"><span class="nick" data-dcid="631120488239857665">Hubert</span></td>
 				<td class="team">InFusion</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+75</span></td>
@@ -2288,7 +2312,7 @@
 			</tr>
 			<tr class="place-48 row0">
 				<td class="rank">48</td>
-				<td class="nick">skurwiel</td>
+				<td class="nick"><span class="nick" data-dcid="598194474086039566">skurwiel</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+27</span></td>
@@ -2314,7 +2338,7 @@
 			</tr>
 			<tr class="place-49 row1">
 				<td class="rank">49</td>
-				<td class="nick">SCARAB</td>
+				<td class="nick"><span class="nick" data-dcid="571379154793005077">SCARAB</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+29</span></td>
@@ -2340,7 +2364,7 @@
 			</tr>
 			<tr class="place-50 row0">
 				<td class="rank">50</td>
-				<td class="nick">Sawik</td>
+				<td class="nick"><span class="nick" data-dcid="571784349951721473">Sawik</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2366,7 +2390,7 @@
 			</tr>
 			<tr class="place-50 row0">
 				<td class="rank">50</td>
-				<td class="nick">[TP]Ramzo</td>
+				<td class="nick"><span class="nick" data-dcid="427128877681475585">[TP]Ramzo</span></td>
 				<td class="team">Team Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+61</span></td>
@@ -2392,7 +2416,7 @@
 			</tr>
 			<tr class="place-52 row0">
 				<td class="rank">52</td>
-				<td class="nick">pawelgaw</td>
+				<td class="nick"><span class="nick" data-dcid="575780899275276296">pawelgaw</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2418,7 +2442,7 @@
 			</tr>
 			<tr class="place-53 row1">
 				<td class="rank">53</td>
-				<td class="nick">Ibiza LPG</td>
+				<td class="nick"><span class="nick" data-dcid="606745507452289035">Ibiza LPG</span></td>
 				<td class="team">Team Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2444,7 +2468,7 @@
 			</tr>
 			<tr class="place-54 row0">
 				<td class="rank">54</td>
-				<td class="nick">Bakajoko</td>
+				<td class="nick"><span class="nick" data-dcid="574219918241693696">Bakajoko</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2470,7 +2494,7 @@
 			</tr>
 			<tr class="place-55 row1">
 				<td class="rank">55</td>
-				<td class="nick">|TG|Firestar</td>
+				<td class="nick"><span class="nick" data-dcid="583000085588082704">|TG|Firestar</span></td>
 				<td class="team">Team Germany</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2496,7 +2520,7 @@
 			</tr>
 			<tr class="place-56 row0">
 				<td class="rank">56</td>
-				<td class="nick">Tacticus</td>
+				<td class="nick"><span class="nick" data-dcid="672737263016214531">Tacticus</span></td>
 				<td class="team">PiWEX</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2522,7 +2546,7 @@
 			</tr>
 			<tr class="place-57 row1">
 				<td class="rank">57</td>
-				<td class="nick">|CT| Patryk</td>
+				<td class="nick"><span class="nick" data-dcid="469562571033280513">|CT| Patryk</span></td>
 				<td class="team">PiWEX</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2548,7 +2572,7 @@
 			</tr>
 			<tr class="place-58 row0">
 				<td class="rank">58</td>
-				<td class="nick">Squalo</td>
+				<td class="nick"><span class="nick" data-dcid="578131951446130688">Squalo</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2574,7 +2598,7 @@
 			</tr>
 			<tr class="place-59 row1">
 				<td class="rank">59</td>
-				<td class="nick">|DP|WzN</td>
+				<td class="nick"><span class="nick" data-dcid="138">|DP|WzN</span></td>
 				<td class="team">Drogowi Patole</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+21</span></td>
@@ -2600,7 +2624,7 @@
 			</tr>
 			<tr class="place-60 row0">
 				<td class="rank">60</td>
-				<td class="nick">S!mon</td>
+				<td class="nick"><span class="nick" data-dcid="612022012155789322">S!mon</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+33</span></td>
@@ -2626,7 +2650,7 @@
 			</tr>
 			<tr class="place-61 row1">
 				<td class="rank">61</td>
-				<td class="nick">|KT|Buła</td>
+				<td class="nick"><span class="nick" data-dcid="680024214094217226">|KT|Buła</span></td>
 				<td class="team">Kałuża Team</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2652,7 +2676,7 @@
 			</tr>
 			<tr class="place-61 row1">
 				<td class="rank">61</td>
-				<td class="nick">Kabura</td>
+				<td class="nick"><span class="nick" data-dcid="577792050423005195">Kabura</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+24</span></td>
@@ -2678,7 +2702,7 @@
 			</tr>
 			<tr class="place-63 row1">
 				<td class="rank">63</td>
-				<td class="nick">DonKamilo</td>
+				<td class="nick"><span class="nick" data-dcid="624312402846154772">DonKamilo</span></td>
 				<td class="team">Stara Gwardia</td>
 				<td class="nation">-</td>
 				<td class="score-change"><span class="plus">+22</span></td>
@@ -2704,7 +2728,7 @@
 			</tr>
 			<tr class="place-63 row1">
 				<td class="rank">63</td>
-				<td class="nick">Lucyfer</td>
+				<td class="nick"><span class="nick" data-dcid="614194988221202491">Lucyfer</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2730,7 +2754,7 @@
 			</tr>
 			<tr class="place-65 row1">
 				<td class="rank">65</td>
-				<td class="nick">Janek</td>
+				<td class="nick"><span class="nick" data-dcid="631914000262627349">Janek</span></td>
 				<td class="team">PiWEX</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2756,7 +2780,7 @@
 			</tr>
 			<tr class="place-66 row0">
 				<td class="rank">66</td>
-				<td class="nick">XYZ</td>
+				<td class="nick"><span class="nick" data-dcid="123467151431565316">XYZ</span></td>
 				<td class="team">NiePoBani</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2782,7 +2806,7 @@
 			</tr>
 			<tr class="place-67 row1">
 				<td class="rank">67</td>
-				<td class="nick">pifpaf</td>
+				<td class="nick"><span class="nick" data-dcid="634094883296247811">pifpaf</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2808,7 +2832,7 @@
 			</tr>
 			<tr class="place-68 row0">
 				<td class="rank">68</td>
-				<td class="nick">Wito</td>
+				<td class="nick"><span class="nick" data-dcid="648158955461410836">Wito</span></td>
 				<td class="team">Legion pl</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2834,7 +2858,7 @@
 			</tr>
 			<tr class="place-69 row1">
 				<td class="rank">69</td>
-				<td class="nick">[PW] Dybion</td>
+				<td class="nick"><span class="nick" data-dcid="679793375637274679">[PW] Dybion</span></td>
 				<td class="team">Polish Warriors</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2860,7 +2884,7 @@
 			</tr>
 			<tr class="place-70 row0">
 				<td class="rank">70</td>
-				<td class="nick">[PW] Dejw</td>
+				<td class="nick"><span class="nick" data-dcid="635227690638639115">[PW] Dejw</span></td>
 				<td class="team">Polish Warriors</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2886,7 +2910,7 @@
 			</tr>
 			<tr class="place-71 row1">
 				<td class="rank">71</td>
-				<td class="nick">|KT|Pro100</td>
+				<td class="nick"><span class="nick" data-dcid="131">|KT|Pro100</span></td>
 				<td class="team">Kałuża Team</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2912,7 +2936,7 @@
 			</tr>
 			<tr class="place-71 row1">
 				<td class="rank">71</td>
-				<td class="nick">Jabba</td>
+				<td class="nick"><span class="nick" data-dcid="577612244909555762">Jabba</span></td>
 				<td class="team">Wildlifers</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2938,7 +2962,7 @@
 			</tr>
 			<tr class="place-73 row1">
 				<td class="rank">73</td>
-				<td class="nick">[TP] Siara</td>
+				<td class="nick"><span class="nick" data-dcid="489357360628891658">[TP] Siara</span></td>
 				<td class="team">Team Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2964,7 +2988,7 @@
 			</tr>
 			<tr class="place-74 row0">
 				<td class="rank">74</td>
-				<td class="nick">Joe p!</td>
+				<td class="nick"><span class="nick" data-dcid="572511251390005248">Joe p!</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -2990,7 +3014,7 @@
 			</tr>
 			<tr class="place-75 row1">
 				<td class="rank">75</td>
-				<td class="nick">Odyssey</td>
+				<td class="nick"><span class="nick" data-dcid="569980841967747082">Odyssey</span></td>
 				<td class="team">United Poland</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -3016,7 +3040,7 @@
 			</tr>
 			<tr class="place-76 row0">
 				<td class="rank">76</td>
-				<td class="nick">(MOC)smierc</td>
+				<td class="nick"><span class="nick" data-dcid="607970800653434888">(MOC)smierc</span></td>
 				<td class="team">MOC</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -3042,7 +3066,7 @@
 			</tr>
 			<tr class="place-77 row1">
 				<td class="rank">77</td>
-				<td class="nick">|CT|MACIEJ</td>
+				<td class="nick"><span class="nick" data-dcid="643707339882496001">|CT|MACIEJ</span></td>
 				<td class="team">PiWEX</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -3068,7 +3092,7 @@
 			</tr>
 			<tr class="place-77 row1">
 				<td class="rank">77</td>
-				<td class="nick">(SB)Sbarro</td>
+				<td class="nick"><span class="nick" data-dcid="392095407834136588">(SB)Sbarro</span></td>
 				<td class="team">SB|PRO CREW</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -3094,7 +3118,7 @@
 			</tr>
 			<tr class="place-79 row1">
 				<td class="rank">79</td>
-				<td class="nick">Pawełek</td>
+				<td class="nick"><span class="nick" data-dcid="576009337554731018">Pawełek</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -3120,7 +3144,7 @@
 			</tr>
 			<tr class="place-80 row0">
 				<td class="rank">80</td>
-				<td class="nick">Mic</td>
+				<td class="nick"><span class="nick" data-dcid="644045343465406468">Mic</span></td>
 				<td class="team">PiWEX</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -3146,7 +3170,7 @@
 			</tr>
 			<tr class="place-81 row1">
 				<td class="rank">81</td>
-				<td class="nick">PBH</td>
+				<td class="nick"><span class="nick" data-dcid="626840268418711562">PBH</span></td>
 				<td class="team">NASCAR RACING</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -3172,7 +3196,7 @@
 			</tr>
 			<tr class="place-81 row1">
 				<td class="rank">81</td>
-				<td class="nick">LoLek</td>
+				<td class="nick"><span class="nick" data-dcid="689447976199782410">LoLek</span></td>
 				<td class="team">Kałuża Team</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -3198,7 +3222,7 @@
 			</tr>
 			<tr class="place-81 row1">
 				<td class="rank">81</td>
-				<td class="nick">Kristaa</td>
+				<td class="nick"><span class="nick" data-dcid="673774974820941846">Kristaa</span></td>
 				<td class="team">Legion pl</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -3224,7 +3248,7 @@
 			</tr>
 			<tr class="place-84 row0">
 				<td class="rank">84</td>
-				<td class="nick">PL|MIXON3K/PL|iAMmiki</td>
+				<td class="nick"><span class="nick" data-dcid="461159478398550026">PL|MIXON3K/PL|iAMmiki</span></td>
 				<td class="team">Polska</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -3250,7 +3274,7 @@
 			</tr>
 			<tr class="place-84 row0">
 				<td class="rank">84</td>
-				<td class="nick">M0mpan</td>
+				<td class="nick"><span class="nick" data-dcid="592810056001650699">M0mpan</span></td>
 				<td class="team">Sweden HCR</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -3276,7 +3300,7 @@
 			</tr>
 			<tr class="place-84 row0">
 				<td class="rank">84</td>
-				<td class="nick">Kocurro</td>
+				<td class="nick"><span class="nick" data-dcid="643907270576570420">Kocurro</span></td>
 				<td class="team">PiWEX</td>
 				<td class="nation">-</td>
 				<td class="score-change"></td>
@@ -3308,14 +3332,28 @@
 		<tr>
 			<th class="table-title">Season 2 episode 3 team results | PEC 18 | Each team can have a maximum of 4 players</th>
 		</tr>
-	</table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank gold" rowspan="2"><img src="../../images/place-1.png" width="24" /></td><td class="team gold">InFusion (A)</td><td class="score gold">3504</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>McM</td><td class="score">1138</td></tr><tr class="row0"><td class="rank">2.</td><td>miszehu</td><td class="score">929</td></tr><tr class="row1"><td class="rank">3.</td><td>Neko818</td><td class="score">806</td></tr><tr class="row0"><td class="rank">4.</td><td>Hubert</td><td class="score">631</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank silver" rowspan="2"><img src="../../images/place-2.png" width="24" /></td><td class="team silver">Unity (A)</td><td class="score silver">3340</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Cool Guy</td><td class="score">1469</td></tr><tr class="row0"><td class="rank">2.</td><td>U|Razor</td><td class="score">1126</td></tr><tr class="row1"><td class="rank">3.</td><td>Canis Lupus</td><td class="score">745</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank bronze" rowspan="2"><img src="../../images/place-3.png" width="24" /></td><td class="team bronze">Polska (A)</td><td class="score bronze">3016</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>PL|Gladki</td><td class="score">1113</td></tr><tr class="row0"><td class="rank">2.</td><td>Kander Jr</td><td class="score">845</td></tr><tr class="row1"><td class="rank">3.</td><td>Mikos</td><td class="score">581</td></tr><tr class="row0"><td class="rank">4.</td><td>ktm 27</td><td class="score">477</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">4</td><td class="team fourplus">United Poland (A)</td><td class="score fourplus">2979</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>CanIntSpace</td><td class="score">1486</td></tr><tr class="row0"><td class="rank">2.</td><td>WojtanKISS</td><td class="score">755</td></tr><tr class="row1"><td class="rank">3.</td><td>Żaba</td><td class="score">399</td></tr><tr class="row0"><td class="rank">4.</td><td>speed_man1</td><td class="score">339</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">5</td><td class="team fourplus">Wildlifers (A)</td><td class="score fourplus">2742</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Juloko</td><td class="score">1396</td></tr><tr class="row0"><td class="rank">2.</td><td>Turtle</td><td class="score">1346</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">6</td><td class="team fourplus">Team Poland (A)</td><td class="score fourplus">2408</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Mlyko21</td><td class="score">891</td></tr><tr class="row0"><td class="rank">2.</td><td>[TP]Ramzo</td><td class="score">545</td></tr><tr class="row1"><td class="rank">3.</td><td>[TP] Mirek</td><td class="score">525</td></tr><tr class="row0"><td class="rank">4.</td><td>QUATTRO</td><td class="score">447</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">7</td><td class="team fourplus">CZE&SVK (A)</td><td class="score fourplus">1512</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>ypsylone</td><td class="score">1071</td></tr><tr class="row0"><td class="rank">2.</td><td>Oaker YT</td><td class="score">441</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">8</td><td class="team fourplus">NiePoBani (A)</td><td class="score fourplus">1398</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>BabaJaga</td><td class="score">1398</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">9</td><td class="team fourplus">Polska (B)</td><td class="score fourplus">1381</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>sobyl</td><td class="score">391</td></tr><tr class="row0"><td class="rank">2.</td><td>S!mon</td><td class="score">334</td></tr><tr class="row1"><td class="rank">3.</td><td>Maciej</td><td class="score">329</td></tr><tr class="row0"><td class="rank">4.</td><td>SCARAB</td><td class="score">327</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">10</td><td class="team fourplus">Discord (A)</td><td class="score fourplus">1347</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Craggy</td><td class="score">1347</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">11</td><td class="team fourplus">ITALIA (A)</td><td class="score fourplus">1251</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Mbow</td><td class="score">1251</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">12</td><td class="team fourplus">Maitres RN (A)</td><td class="score fourplus">971</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Velkyrin</td><td class="score">971</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">12</td><td class="team fourplus">French Power (A)</td><td class="score fourplus">971</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Magic Fans</td><td class="score">971</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">14</td><td class="team fourplus">Polish Warriors (A)</td><td class="score fourplus">703</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>[PW] JChod</td><td class="score">703</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">15</td><td class="team fourplus">Team Harold (A)</td><td class="score fourplus">616</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>(PR)Avitohol</td><td class="score">616</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">16</td><td class="team fourplus">PiWEX (A)</td><td class="score fourplus">455</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>HOT</td><td class="score">455</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">17</td><td class="team fourplus">United Poland (B)</td><td class="score fourplus">264</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>skurwiel</td><td class="score">264</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">18</td><td class="team fourplus">Team Poland (B)</td><td class="score fourplus">244</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Gadzzet</td><td class="score">244</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">19</td><td class="team fourplus">Polska (C)</td><td class="score fourplus">226</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Kabura</td><td class="score">226</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">20</td><td class="team fourplus">Stara Gwardia (A)</td><td class="score fourplus">203</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>DonKamilo</td><td class="score">203</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">21</td><td class="team fourplus">Drogowi Patole (A)</td><td class="score fourplus">177</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>|DP|WzN</td><td class="score">177</td></tr></table></td></tr></table>
+	</table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank gold" rowspan="2"><img src="../../images/place-1.png" width="24" /></td><td class="team gold">InFusion (A)</td><td class="score gold">3504</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="595018077016555530">McM</span></td><td class="score">1138</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="574280579886088193">miszehu</span></td><td class="score">929</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="598470333976018955">Neko818</span></td><td class="score">806</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="631120488239857665">Hubert</span></td><td class="score">631</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank silver" rowspan="2"><img src="../../images/place-2.png" width="24" /></td><td class="team silver">Unity (A)</td><td class="score silver">3340</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="729046081115127838">Cool Guy</span></td><td class="score">1469</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="283610109555376129">U|Razor</span></td><td class="score">1126</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="632330000342974494">Canis Lupus</span></td><td class="score">745</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank bronze" rowspan="2"><img src="../../images/place-3.png" width="24" /></td><td class="team bronze">Polska (A)</td><td class="score bronze">3016</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="614804192426721294">PL|Gladki</span></td><td class="score">1113</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="569905447440613390">Kander Jr</span></td><td class="score">845</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="580381168806133782">Mikos</span></td><td class="score">581</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="587606384284270594">ktm 27</span></td><td class="score">477</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">4</td><td class="team fourplus">United Poland (A)</td><td class="score fourplus">2979</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="440142870414884914">CanIntSpace</span></td><td class="score">1486</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="254508144938582016">WojtanKISS</span></td><td class="score">755</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="580346947421077515">Żaba</span></td><td class="score">399</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="578639532921192448">speed_man1</span></td><td class="score">339</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">5</td><td class="team fourplus">Wildlifers (A)</td><td class="score fourplus">2742</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="594596245507670069">Juloko</span></td><td class="score">1396</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="257136799468486656">Turtle</span></td><td class="score">1346</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">6</td><td class="team fourplus">Team Poland (A)</td><td class="score fourplus">2408</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="650399111929135109">Mlyko21</span></td><td class="score">891</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="427128877681475585">[TP]Ramzo</span></td><td class="score">545</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="632288789775253536">[TP] Mirek</span></td><td class="score">525</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="631558668315394049">QUATTRO</span></td><td class="score">447</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">7</td><td class="team fourplus">CZE&SVK (A)</td><td class="score fourplus">1512</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="584016012853379091">ypsylone</span></td><td class="score">1071</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="339808598433464336">Oaker YT</span></td><td class="score">441</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">8</td><td class="team fourplus">NiePoBani (A)</td><td class="score fourplus">1398</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="642090476836749352">BabaJaga</span></td><td class="score">1398</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">9</td><td class="team fourplus">Polska (B)</td><td class="score fourplus">1381</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="641036495087599617">sobyl</span></td><td class="score">391</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="612022012155789322">S!mon</span></td><td class="score">334</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="578636294603669504">Maciej</span></td><td class="score">329</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="571379154793005077">SCARAB</span></td><td class="score">327</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">10</td><td class="team fourplus">Discord (A)</td><td class="score fourplus">1347</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="583694017997308136">Craggy</span></td><td class="score">1347</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">11</td><td class="team fourplus">ITALIA (A)</td><td class="score fourplus">1251</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="240220238891843586">Mbow</span></td><td class="score">1251</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">12</td><td class="team fourplus">Maitres RN (A)</td><td class="score fourplus">971</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="351108931919151105">Velkyrin</span></td><td class="score">971</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">12</td><td class="team fourplus">French Power (A)</td><td class="score fourplus">971</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="600773365321564160">Magic Fans</span></td><td class="score">971</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">14</td><td class="team fourplus">Polish Warriors (A)</td><td class="score fourplus">703</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="494161932190744577">[PW] JChod</span></td><td class="score">703</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">15</td><td class="team fourplus">Team Harold (A)</td><td class="score fourplus">616</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="482468633784614912">(PR)Avitohol</span></td><td class="score">616</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">16</td><td class="team fourplus">PiWEX (A)</td><td class="score fourplus">455</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="654728444613099520">HOT</span></td><td class="score">455</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">17</td><td class="team fourplus">United Poland (B)</td><td class="score fourplus">264</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="598194474086039566">skurwiel</span></td><td class="score">264</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">18</td><td class="team fourplus">Team Poland (B)</td><td class="score fourplus">244</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="587302538718609428">Gadzzet</span></td><td class="score">244</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">19</td><td class="team fourplus">Polska (C)</td><td class="score fourplus">226</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="577792050423005195">Kabura</span></td><td class="score">226</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">20</td><td class="team fourplus">Stara Gwardia (A)</td><td class="score fourplus">203</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="624312402846154772">DonKamilo</span></td><td class="score">203</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">21</td><td class="team fourplus">Drogowi Patole (A)</td><td class="score fourplus">177</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="138">|DP|WzN</span></td><td class="score">177</td></tr></table></td></tr></table>
 </div>
 <div class="tables teams s" style="display: none;">
 	<table style="width: 100%;">
 		<tr>
 			<th class="table-title">Season team standings after episode 3 of 15</th>
 		</tr>
-	</table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank gold" rowspan="2"><img src="../../images/place-1.png" width="24" /></td><td class="team gold">Polska (A)<div style="float: right; text-align: right;">3×PEC <span>(avg 4 players per PEC)</span></div></td><td class="score gold">14977</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Mikos</td><td class="pec"> 3×PEC</td><td class="score">4558</td></tr><tr class="row0"><td class="rank">2.</td><td>PL|Gladki</td><td class="pec"> 3×PEC</td><td class="score">4139</td></tr><tr class="row1"><td class="rank">3.</td><td>sobyl</td><td class="pec"> 1×PEC</td><td class="score">1385</td></tr><tr class="row0"><td class="rank">4.</td><td>Maciej</td><td class="pec"> 1×PEC</td><td class="score">1350</td></tr><tr class="row1"><td class="rank">5.</td><td>ravg</td><td class="pec"> 1×PEC</td><td class="score">1171</td></tr><tr class="row0"><td class="rank">6.</td><td>M4rchwia</td><td class="pec"> 1×PEC</td><td class="score">1052</td></tr><tr class="row1"><td class="rank">7.</td><td>Kander Jr</td><td class="pec"> 1×PEC</td><td class="score">845</td></tr><tr class="row0"><td class="rank">8.</td><td>ktm 27</td><td class="pec"> 1×PEC</td><td class="score">477</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank silver" rowspan="2"><img src="../../images/place-2.png" width="24" /></td><td class="team silver">Unity (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">3</span> players per PEC)</span></div></td><td class="score silver">13957</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Cool Guy</td><td class="pec"> 3×PEC</td><td class="score">6640</td></tr><tr class="row0"><td class="rank">2.</td><td>U|Razor</td><td class="pec"> 2×PEC</td><td class="score">3702</td></tr><tr class="row1"><td class="rank">3.</td><td>JR</td><td class="pec"> 2×PEC</td><td class="score">2018</td></tr><tr class="row0"><td class="rank">4.</td><td>Canis Lupus</td><td class="pec"> 2×PEC</td><td class="score">1597</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank bronze" rowspan="2"><img src="../../images/place-3.png" width="24" /></td><td class="team bronze">United Poland (A)<div style="float: right; text-align: right;">3×PEC <span>(avg 4 players per PEC)</span></div></td><td class="score bronze">12939</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>CanIntSpace</td><td class="pec"> 3×PEC</td><td class="score">6148</td></tr><tr class="row0"><td class="rank">2.</td><td>WojtanKISS</td><td class="pec"> 2×PEC</td><td class="score">1983</td></tr><tr class="row1"><td class="rank">3.</td><td>Żaba</td><td class="pec"> 2×PEC</td><td class="score">1301</td></tr><tr class="row0"><td class="rank">4.</td><td>Amator</td><td class="pec"> 1×PEC</td><td class="score">996</td></tr><tr class="row1"><td class="rank">5.</td><td>skurwiel</td><td class="pec"> 1×PEC</td><td class="score">842</td></tr><tr class="row0"><td class="rank">6.</td><td>pawelgaw</td><td class="pec"> 1×PEC</td><td class="score">810</td></tr><tr class="row1"><td class="rank">7.</td><td>pifpaf</td><td class="pec"> 1×PEC</td><td class="score">520</td></tr><tr class="row0"><td class="rank">8.</td><td>speed_man1</td><td class="pec"> 1×PEC</td><td class="score">339</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">4</td><td class="team fourplus">Wildlifers (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">2.67</span> players per PEC)</span></div></td><td class="score fourplus">11418</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Turtle</td><td class="pec"> 3×PEC</td><td class="score">5940</td></tr><tr class="row0"><td class="rank">2.</td><td>frik007</td><td class="pec"> 1×PEC</td><td class="score">1559</td></tr><tr class="row1"><td class="rank">3.</td><td>Juloko</td><td class="pec"> 1×PEC</td><td class="score">1396</td></tr><tr class="row0"><td class="rank">4.</td><td>HoThumbs</td><td class="pec"> 1×PEC</td><td class="score">1299</td></tr><tr class="row1"><td class="rank">5.</td><td>EMPiRE</td><td class="pec"> 1×PEC</td><td class="score">858</td></tr><tr class="row0"><td class="rank">6.</td><td>Jabba</td><td class="pec"> 1×PEC</td><td class="score">366</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">5</td><td class="team fourplus">Team Poland (A)<div style="float: right; text-align: right;">3×PEC <span>(avg 4 players per PEC)</span></div></td><td class="score fourplus">9452</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>[TP] Mirek</td><td class="pec"> 3×PEC</td><td class="score">2776</td></tr><tr class="row0"><td class="rank">2.</td><td>QUATTRO</td><td class="pec"> 3×PEC</td><td class="score">2482</td></tr><tr class="row1"><td class="rank">3.</td><td>Mlyko21</td><td class="pec"> 2×PEC</td><td class="score">2061</td></tr><tr class="row0"><td class="rank">4.</td><td>Gadzzet</td><td class="pec"> 2×PEC</td><td class="score">1117</td></tr><tr class="row1"><td class="rank">5.</td><td>[TP]Ramzo</td><td class="pec"> 1×PEC</td><td class="score">545</td></tr><tr class="row0"><td class="rank">6.</td><td>Ibiza LPG</td><td class="pec"> 1×PEC</td><td class="score">471</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">6</td><td class="team fourplus">Discord (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">1.67</span> players per PEC)</span></div></td><td class="score fourplus">8677</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Craggy</td><td class="pec"> 3×PEC</td><td class="score">6536</td></tr><tr class="row0"><td class="rank">2.</td><td>Vadyon</td><td class="pec"> 2×PEC</td><td class="score">2141</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">7</td><td class="team fourplus">Polska (B)<div style="float: right; text-align: right;">3×PEC <span>(avg 4 players per PEC)</span></div></td><td class="score fourplus">8523</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>SZH</td><td class="pec"> 2×PEC</td><td class="score">2121</td></tr><tr class="row0"><td class="rank">2.</td><td>Sawik</td><td class="pec"> 1×PEC</td><td class="score">1324</td></tr><tr class="row1"><td class="rank">3.</td><td>Maciej</td><td class="pec"> 2×PEC</td><td class="score">1068</td></tr><tr class="row0"><td class="rank">4.</td><td>Canis Lupus</td><td class="pec"> 1×PEC</td><td class="score">951</td></tr><tr class="row1"><td class="rank">5.</td><td>ktm 27</td><td class="pec"> 1×PEC</td><td class="score">727</td></tr><tr class="row0"><td class="rank">6.</td><td>Bakajoko</td><td class="pec"> 1×PEC</td><td class="score">659</td></tr><tr class="row1"><td class="rank">7.</td><td>JR</td><td class="pec"> 1×PEC</td><td class="score">621</td></tr><tr class="row0"><td class="rank">8.</td><td>sobyl</td><td class="pec"> 1×PEC</td><td class="score">391</td></tr><tr class="row1"><td class="rank">9.</td><td>S!mon</td><td class="pec"> 1×PEC</td><td class="score">334</td></tr><tr class="row0"><td class="rank">10.</td><td>SCARAB</td><td class="pec"> 1×PEC</td><td class="score">327</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">8</td><td class="team fourplus">InFusion (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">2.67</span> players per PEC)</span></div></td><td class="score fourplus">7492</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>McM</td><td class="pec"> 2×PEC</td><td class="score">2805</td></tr><tr class="row0"><td class="rank">2.</td><td>Neko818</td><td class="pec"> 3×PEC</td><td class="score">2150</td></tr><tr class="row1"><td class="rank">3.</td><td>miszehu</td><td class="pec"> 2×PEC</td><td class="score">1906</td></tr><tr class="row0"><td class="rank">4.</td><td>Hubert</td><td class="pec"> 1×PEC</td><td class="score">631</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">9</td><td class="team fourplus">ITALIA (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">1.67</span> players per PEC)</span></div></td><td class="score fourplus">7120</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Mbow</td><td class="pec"> 3×PEC</td><td class="score">5961</td></tr><tr class="row0"><td class="rank">2.</td><td>IT|Sampdoria</td><td class="pec"> 2×PEC</td><td class="score">1159</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">10</td><td class="team fourplus">NiePoBani (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">1.33</span> players per PEC)</span></div></td><td class="score fourplus">5246</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>BabaJaga</td><td class="pec"> 3×PEC</td><td class="score">4837</td></tr><tr class="row0"><td class="rank">2.</td><td>XYZ</td><td class="pec"> 1×PEC</td><td class="score">409</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">11</td><td class="team fourplus">United Poland (B)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">3</span> players per PEC)</span></div></td><td class="score fourplus">4352</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>speed_man1</td><td class="pec"> 2×PEC</td><td class="score">1245</td></tr><tr class="row0"><td class="rank">2.</td><td>Shredder</td><td class="pec"> 1×PEC</td><td class="score">844</td></tr><tr class="row1"><td class="rank">3.</td><td>Lucyfer</td><td class="pec"> 2×PEC</td><td class="score">745</td></tr><tr class="row0"><td class="rank">4.</td><td>Żaba</td><td class="pec"> 1×PEC</td><td class="score">513</td></tr><tr class="row1"><td class="rank">5.</td><td>pawelgaw</td><td class="pec"> 1×PEC</td><td class="score">391</td></tr><tr class="row0"><td class="rank">6.</td><td>WojtanKISS</td><td class="pec"> 1×PEC</td><td class="score">350</td></tr><tr class="row1"><td class="rank">7.</td><td>skurwiel</td><td class="pec"> 1×PEC</td><td class="score">264</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">12</td><td class="team fourplus">Greek Riders (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">1</span> players per PEC)</span></div></td><td class="score fourplus">4008</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>wingy</td><td class="pec"> 2×PEC</td><td class="score">2478</td></tr><tr class="row0"><td class="rank">2.</td><td>JR</td><td class="pec"> 1×PEC</td><td class="score">1530</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">13</td><td class="team fourplus">PiWEX (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">3</span> players per PEC)</span></div></td><td class="score fourplus">3627</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>HOT</td><td class="pec"> 3×PEC</td><td class="score">1180</td></tr><tr class="row0"><td class="rank">2.</td><td>Tacticus</td><td class="pec"> 2×PEC</td><td class="score">922</td></tr><tr class="row1"><td class="rank">3.</td><td>|CT| Patryk</td><td class="pec"> 2×PEC</td><td class="score">789</td></tr><tr class="row0"><td class="rank">4.</td><td>Janek</td><td class="pec"> 1×PEC</td><td class="score">579</td></tr><tr class="row1"><td class="rank">5.</td><td>Mic</td><td class="pec"> 1×PEC</td><td class="score">157</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">14</td><td class="team fourplus">Team Harold (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">1</span> players per PEC)</span></div></td><td class="score fourplus">3274</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>(PR)Avitohol</td><td class="pec"> 3×PEC</td><td class="score">3274</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">15</td><td class="team fourplus">French Power (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">0.67</span> players per PEC)</span></div></td><td class="score fourplus">3107</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Magic Fans</td><td class="pec"> 2×PEC</td><td class="score">3107</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">16</td><td class="team fourplus">Polska (C)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">2.33</span> players per PEC)</span></div></td><td class="score fourplus">2949</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>SCARAB</td><td class="pec"> 2×PEC</td><td class="score">914</td></tr><tr class="row0"><td class="rank">2.</td><td>ktm 27</td><td class="pec"> 1×PEC</td><td class="score">610</td></tr><tr class="row1"><td class="rank">3.</td><td>Squalo</td><td class="pec"> 1×PEC</td><td class="score">514</td></tr><tr class="row0"><td class="rank">4.</td><td>sobyl</td><td class="pec"> 1×PEC</td><td class="score">392</td></tr><tr class="row1"><td class="rank">5.</td><td>Pawełek</td><td class="pec"> 1×PEC</td><td class="score">293</td></tr><tr class="row0"><td class="rank">6.</td><td>Kabura</td><td class="pec"> 1×PEC</td><td class="score">226</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">17</td><td class="team fourplus">CZE&SVK (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">1</span> players per PEC)</span></div></td><td class="score fourplus">2901</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Oaker YT</td><td class="pec"> 2×PEC</td><td class="score">1830</td></tr><tr class="row0"><td class="rank">2.</td><td>ypsylone</td><td class="pec"> 1×PEC</td><td class="score">1071</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">18</td><td class="team fourplus">Maitres RN (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">0.67</span> players per PEC)</span></div></td><td class="score fourplus">2474</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Velkyrin</td><td class="pec"> 2×PEC</td><td class="score">2474</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">19</td><td class="team fourplus">Polish Warriors (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">2</span> players per PEC)</span></div></td><td class="score fourplus">2290</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>[PW] JChod</td><td class="pec"> 2×PEC</td><td class="score">1255</td></tr><tr class="row0"><td class="rank">2.</td><td>[PW] Dybion</td><td class="pec"> 2×PEC</td><td class="score">533</td></tr><tr class="row1"><td class="rank">3.</td><td>[PW] Dejw</td><td class="pec"> 2×PEC</td><td class="score">502</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">20</td><td class="team fourplus">Team Poland (B)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">1.33</span> players per PEC)</span></div></td><td class="score fourplus">1570</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Ibiza LPG</td><td class="pec"> 1×PEC</td><td class="score">536</td></tr><tr class="row0"><td class="rank">2.</td><td>Mlyko21</td><td class="pec"> 1×PEC</td><td class="score">427</td></tr><tr class="row1"><td class="rank">3.</td><td>[TP] Siara</td><td class="pec"> 1×PEC</td><td class="score">363</td></tr><tr class="row0"><td class="rank">4.</td><td>Gadzzet</td><td class="pec"> 1×PEC</td><td class="score">244</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">21</td><td class="team fourplus">PowerFour (A)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">0.33</span> players per PEC)</span></div></td><td class="score fourplus">1551</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Lucky</td><td class="pec"> 1×PEC</td><td class="score">1551</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">22</td><td class="team fourplus">Kałuża Team (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">1.33</span> players per PEC)</span></div></td><td class="score fourplus">1266</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>|KT|Buła</td><td class="pec"> 2×PEC</td><td class="score">673</td></tr><tr class="row0"><td class="rank">2.</td><td>|KT|Pro100</td><td class="pec"> 1×PEC</td><td class="score">458</td></tr><tr class="row1"><td class="rank">3.</td><td>LoLek</td><td class="pec"> 1×PEC</td><td class="score">135</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">23</td><td class="team fourplus">Drogowi Patole (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">0.67</span> players per PEC)</span></div></td><td class="score fourplus">637</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>|DP|WzN</td><td class="pec"> 2×PEC</td><td class="score">637</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">24</td><td class="team fourplus">Legion pl (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">0.67</span> players per PEC)</span></div></td><td class="score fourplus">623</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Wito</td><td class="pec"> 1×PEC</td><td class="score">515</td></tr><tr class="row0"><td class="rank">2.</td><td>Kristaa</td><td class="pec"> 1×PEC</td><td class="score">108</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">24</td><td class="team fourplus">Team Germany (A)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">0.33</span> players per PEC)</span></div></td><td class="score fourplus">623</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>|TG|Firestar</td><td class="pec"> 1×PEC</td><td class="score">623</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">26</td><td class="team fourplus">Polska (D)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">1</span> players per PEC)</span></div></td><td class="score fourplus">527</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Joe p!</td><td class="pec"> 1×PEC</td><td class="score">340</td></tr><tr class="row0"><td class="rank">2.</td><td>Kabura</td><td class="pec"> 1×PEC</td><td class="score">154</td></tr><tr class="row1"><td class="rank">3.</td><td>PL|MIXON3K/PL|iAMmiki</td><td class="pec"> 1×PEC</td><td class="score">33</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">27</td><td class="team fourplus">Stara Gwardia (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">0.67</span> players per PEC)</span></div></td><td class="score fourplus">423</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>DonKamilo</td><td class="pec"> 2×PEC</td><td class="score">423</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">28</td><td class="team fourplus">PiWEX (B)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">0.67</span> players per PEC)</span></div></td><td class="score fourplus">415</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>|CT|MACIEJ</td><td class="pec"> 1×PEC</td><td class="score">327</td></tr><tr class="row0"><td class="rank">2.</td><td>Kocurro</td><td class="pec"> 1×PEC</td><td class="score">88</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">29</td><td class="team fourplus">United Poland (C)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">0.33</span> players per PEC)</span></div></td><td class="score fourplus">338</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>Odyssey</td><td class="pec"> 1×PEC</td><td class="score">338</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">30</td><td class="team fourplus">MOC (A)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">0.33</span> players per PEC)</span></div></td><td class="score fourplus">301</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>(MOC)smierc</td><td class="pec"> 1×PEC</td><td class="score">301</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">31</td><td class="team fourplus">SB|PRO CREW (A)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">0.33</span> players per PEC)</span></div></td><td class="score fourplus">265</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>(SB)Sbarro</td><td class="pec"> 1×PEC</td><td class="score">265</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">32</td><td class="team fourplus">NASCAR RACING (A)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">0.33</span> players per PEC)</span></div></td><td class="score fourplus">191</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>PBH</td><td class="pec"> 1×PEC</td><td class="score">191</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">33</td><td class="team fourplus">Sweden HCR (A)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">0.33</span> players per PEC)</span></div></td><td class="score fourplus">18</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td>M0mpan</td><td class="pec"> 1×PEC</td><td class="score">18</td></tr></table></td></tr></table>
+	</table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank gold" rowspan="2"><img src="../../images/place-1.png" width="24" /></td><td class="team gold">Polska (A)<div style="float: right; text-align: right;">3×PEC <span>(avg 4 players per PEC)</span></div></td><td class="score gold">14977</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="580381168806133782">Mikos</span></td><td class="pec"> 3×PEC</td><td class="score">4558</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="614804192426721294">PL|Gladki</span></td><td class="pec"> 3×PEC</td><td class="score">4139</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="641036495087599617">sobyl</span></td><td class="pec"> 1×PEC</td><td class="score">1385</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="578636294603669504">Maciej</span></td><td class="pec"> 1×PEC</td><td class="score">1350</td></tr><tr class="row1"><td class="rank">5.</td><td><span class="nick" data-dcid="572437303666933761">ravg</span></td><td class="pec"> 1×PEC</td><td class="score">1171</td></tr><tr class="row0"><td class="rank">6.</td><td><span class="nick" data-dcid="607185013875802117">M4rchwia</span></td><td class="pec"> 1×PEC</td><td class="score">1052</td></tr><tr class="row1"><td class="rank">7.</td><td><span class="nick" data-dcid="569905447440613390">Kander Jr</span></td><td class="pec"> 1×PEC</td><td class="score">845</td></tr><tr class="row0"><td class="rank">8.</td><td><span class="nick" data-dcid="587606384284270594">ktm 27</span></td><td class="pec"> 1×PEC</td><td class="score">477</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank silver" rowspan="2"><img src="../../images/place-2.png" width="24" /></td><td class="team silver">Unity (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">3</span> players per PEC)</span></div></td><td class="score silver">13957</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="729046081115127838">Cool Guy</span></td><td class="pec"> 3×PEC</td><td class="score">6640</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="283610109555376129">U|Razor</span></td><td class="pec"> 2×PEC</td><td class="score">3702</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="572002666713055232">JR</span></td><td class="pec"> 2×PEC</td><td class="score">2018</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="632330000342974494">Canis Lupus</span></td><td class="pec"> 2×PEC</td><td class="score">1597</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank bronze" rowspan="2"><img src="../../images/place-3.png" width="24" /></td><td class="team bronze">United Poland (A)<div style="float: right; text-align: right;">3×PEC <span>(avg 4 players per PEC)</span></div></td><td class="score bronze">12939</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="440142870414884914">CanIntSpace</span></td><td class="pec"> 3×PEC</td><td class="score">6148</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="254508144938582016">WojtanKISS</span></td><td class="pec"> 2×PEC</td><td class="score">1983</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="580346947421077515">Żaba</span></td><td class="pec"> 2×PEC</td><td class="score">1301</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="600937863160397824">Amator</span></td><td class="pec"> 1×PEC</td><td class="score">996</td></tr><tr class="row1"><td class="rank">5.</td><td><span class="nick" data-dcid="598194474086039566">skurwiel</span></td><td class="pec"> 1×PEC</td><td class="score">842</td></tr><tr class="row0"><td class="rank">6.</td><td><span class="nick" data-dcid="575780899275276296">pawelgaw</span></td><td class="pec"> 1×PEC</td><td class="score">810</td></tr><tr class="row1"><td class="rank">7.</td><td><span class="nick" data-dcid="634094883296247811">pifpaf</span></td><td class="pec"> 1×PEC</td><td class="score">520</td></tr><tr class="row0"><td class="rank">8.</td><td><span class="nick" data-dcid="578639532921192448">speed_man1</span></td><td class="pec"> 1×PEC</td><td class="score">339</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">4</td><td class="team fourplus">Wildlifers (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">2.67</span> players per PEC)</span></div></td><td class="score fourplus">11418</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="257136799468486656">Turtle</span></td><td class="pec"> 3×PEC</td><td class="score">5940</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="597002539292033036">frik007</span></td><td class="pec"> 1×PEC</td><td class="score">1559</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="594596245507670069">Juloko</span></td><td class="pec"> 1×PEC</td><td class="score">1396</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="572100720875143168">HoThumbs</span></td><td class="pec"> 1×PEC</td><td class="score">1299</td></tr><tr class="row1"><td class="rank">5.</td><td><span class="nick" data-dcid="677965442194604050">EMPiRE</span></td><td class="pec"> 1×PEC</td><td class="score">858</td></tr><tr class="row0"><td class="rank">6.</td><td><span class="nick" data-dcid="577612244909555762">Jabba</span></td><td class="pec"> 1×PEC</td><td class="score">366</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">5</td><td class="team fourplus">Team Poland (A)<div style="float: right; text-align: right;">3×PEC <span>(avg 4 players per PEC)</span></div></td><td class="score fourplus">9452</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="632288789775253536">[TP] Mirek</span></td><td class="pec"> 3×PEC</td><td class="score">2776</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="631558668315394049">QUATTRO</span></td><td class="pec"> 3×PEC</td><td class="score">2482</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="650399111929135109">Mlyko21</span></td><td class="pec"> 2×PEC</td><td class="score">2061</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="587302538718609428">Gadzzet</span></td><td class="pec"> 2×PEC</td><td class="score">1117</td></tr><tr class="row1"><td class="rank">5.</td><td><span class="nick" data-dcid="427128877681475585">[TP]Ramzo</span></td><td class="pec"> 1×PEC</td><td class="score">545</td></tr><tr class="row0"><td class="rank">6.</td><td><span class="nick" data-dcid="606745507452289035">Ibiza LPG</span></td><td class="pec"> 1×PEC</td><td class="score">471</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">6</td><td class="team fourplus">Discord (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">1.67</span> players per PEC)</span></div></td><td class="score fourplus">8677</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="583694017997308136">Craggy</span></td><td class="pec"> 3×PEC</td><td class="score">6536</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="240891652326162433">Vadyon</span></td><td class="pec"> 2×PEC</td><td class="score">2141</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">7</td><td class="team fourplus">Polska (B)<div style="float: right; text-align: right;">3×PEC <span>(avg 4 players per PEC)</span></div></td><td class="score fourplus">8523</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="603513361597988875">SZH</span></td><td class="pec"> 2×PEC</td><td class="score">2121</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="571784349951721473">Sawik</span></td><td class="pec"> 1×PEC</td><td class="score">1324</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="578636294603669504">Maciej</span></td><td class="pec"> 2×PEC</td><td class="score">1068</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="632330000342974494">Canis Lupus</span></td><td class="pec"> 1×PEC</td><td class="score">951</td></tr><tr class="row1"><td class="rank">5.</td><td><span class="nick" data-dcid="587606384284270594">ktm 27</span></td><td class="pec"> 1×PEC</td><td class="score">727</td></tr><tr class="row0"><td class="rank">6.</td><td><span class="nick" data-dcid="574219918241693696">Bakajoko</span></td><td class="pec"> 1×PEC</td><td class="score">659</td></tr><tr class="row1"><td class="rank">7.</td><td><span class="nick" data-dcid="570694723572858881">JR</span></td><td class="pec"> 1×PEC</td><td class="score">621</td></tr><tr class="row0"><td class="rank">8.</td><td><span class="nick" data-dcid="641036495087599617">sobyl</span></td><td class="pec"> 1×PEC</td><td class="score">391</td></tr><tr class="row1"><td class="rank">9.</td><td><span class="nick" data-dcid="612022012155789322">S!mon</span></td><td class="pec"> 1×PEC</td><td class="score">334</td></tr><tr class="row0"><td class="rank">10.</td><td><span class="nick" data-dcid="571379154793005077">SCARAB</span></td><td class="pec"> 1×PEC</td><td class="score">327</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">8</td><td class="team fourplus">InFusion (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">2.67</span> players per PEC)</span></div></td><td class="score fourplus">7492</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="595018077016555530">McM</span></td><td class="pec"> 2×PEC</td><td class="score">2805</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="598470333976018955">Neko818</span></td><td class="pec"> 3×PEC</td><td class="score">2150</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="574280579886088193">miszehu</span></td><td class="pec"> 2×PEC</td><td class="score">1906</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="631120488239857665">Hubert</span></td><td class="pec"> 1×PEC</td><td class="score">631</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">9</td><td class="team fourplus">ITALIA (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">1.67</span> players per PEC)</span></div></td><td class="score fourplus">7120</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="240220238891843586">Mbow</span></td><td class="pec"> 3×PEC</td><td class="score">5961</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="574572283859959827">IT|Sampdoria</span></td><td class="pec"> 2×PEC</td><td class="score">1159</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">10</td><td class="team fourplus">NiePoBani (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">1.33</span> players per PEC)</span></div></td><td class="score fourplus">5246</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="642090476836749352">BabaJaga</span></td><td class="pec"> 3×PEC</td><td class="score">4837</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="123467151431565316">XYZ</span></td><td class="pec"> 1×PEC</td><td class="score">409</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">11</td><td class="team fourplus">United Poland (B)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">3</span> players per PEC)</span></div></td><td class="score fourplus">4352</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="578639532921192448">speed_man1</span></td><td class="pec"> 2×PEC</td><td class="score">1245</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="574699179100733441">Shredder</span></td><td class="pec"> 1×PEC</td><td class="score">844</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="614194988221202491">Lucyfer</span></td><td class="pec"> 2×PEC</td><td class="score">745</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="580346947421077515">Żaba</span></td><td class="pec"> 1×PEC</td><td class="score">513</td></tr><tr class="row1"><td class="rank">5.</td><td><span class="nick" data-dcid="575780899275276296">pawelgaw</span></td><td class="pec"> 1×PEC</td><td class="score">391</td></tr><tr class="row0"><td class="rank">6.</td><td><span class="nick" data-dcid="254508144938582016">WojtanKISS</span></td><td class="pec"> 1×PEC</td><td class="score">350</td></tr><tr class="row1"><td class="rank">7.</td><td><span class="nick" data-dcid="598194474086039566">skurwiel</span></td><td class="pec"> 1×PEC</td><td class="score">264</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">12</td><td class="team fourplus">Greek Riders (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">1</span> players per PEC)</span></div></td><td class="score fourplus">4008</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="329973762071986178">wingy</span></td><td class="pec"> 2×PEC</td><td class="score">2478</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="570694723572858881">JR</span></td><td class="pec"> 1×PEC</td><td class="score">1530</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">13</td><td class="team fourplus">PiWEX (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">3</span> players per PEC)</span></div></td><td class="score fourplus">3627</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="654728444613099520">HOT</span></td><td class="pec"> 3×PEC</td><td class="score">1180</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="672737263016214531">Tacticus</span></td><td class="pec"> 2×PEC</td><td class="score">922</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="469562571033280513">|CT| Patryk</span></td><td class="pec"> 2×PEC</td><td class="score">789</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="631914000262627349">Janek</span></td><td class="pec"> 1×PEC</td><td class="score">579</td></tr><tr class="row1"><td class="rank">5.</td><td><span class="nick" data-dcid="644045343465406468">Mic</span></td><td class="pec"> 1×PEC</td><td class="score">157</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">14</td><td class="team fourplus">Team Harold (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">1</span> players per PEC)</span></div></td><td class="score fourplus">3274</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="482468633784614912">(PR)Avitohol</span></td><td class="pec"> 3×PEC</td><td class="score">3274</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">15</td><td class="team fourplus">French Power (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">0.67</span> players per PEC)</span></div></td><td class="score fourplus">3107</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="600773365321564160">Magic Fans</span></td><td class="pec"> 2×PEC</td><td class="score">3107</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">16</td><td class="team fourplus">Polska (C)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">2.33</span> players per PEC)</span></div></td><td class="score fourplus">2949</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="571379154793005077">SCARAB</span></td><td class="pec"> 2×PEC</td><td class="score">914</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="587606384284270594">ktm 27</span></td><td class="pec"> 1×PEC</td><td class="score">610</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="578131951446130688">Squalo</span></td><td class="pec"> 1×PEC</td><td class="score">514</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="641036495087599617">sobyl</span></td><td class="pec"> 1×PEC</td><td class="score">392</td></tr><tr class="row1"><td class="rank">5.</td><td><span class="nick" data-dcid="576009337554731018">Pawełek</span></td><td class="pec"> 1×PEC</td><td class="score">293</td></tr><tr class="row0"><td class="rank">6.</td><td><span class="nick" data-dcid="577792050423005195">Kabura</span></td><td class="pec"> 1×PEC</td><td class="score">226</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">17</td><td class="team fourplus">CZE&SVK (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">1</span> players per PEC)</span></div></td><td class="score fourplus">2901</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="339808598433464336">Oaker YT</span></td><td class="pec"> 2×PEC</td><td class="score">1830</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="584016012853379091">ypsylone</span></td><td class="pec"> 1×PEC</td><td class="score">1071</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">18</td><td class="team fourplus">Maitres RN (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">0.67</span> players per PEC)</span></div></td><td class="score fourplus">2474</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="351108931919151105">Velkyrin</span></td><td class="pec"> 2×PEC</td><td class="score">2474</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">19</td><td class="team fourplus">Polish Warriors (A)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">2</span> players per PEC)</span></div></td><td class="score fourplus">2290</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="494161932190744577">[PW] JChod</span></td><td class="pec"> 2×PEC</td><td class="score">1255</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="679793375637274679">[PW] Dybion</span></td><td class="pec"> 2×PEC</td><td class="score">533</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="635227690638639115">[PW] Dejw</span></td><td class="pec"> 2×PEC</td><td class="score">502</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">20</td><td class="team fourplus">Team Poland (B)<div style="float: right; text-align: right;">3×PEC <span>(avg <span style="color: #AA3300;">1.33</span> players per PEC)</span></div></td><td class="score fourplus">1570</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="606745507452289035">Ibiza LPG</span></td><td class="pec"> 1×PEC</td><td class="score">536</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="650399111929135109">Mlyko21</span></td><td class="pec"> 1×PEC</td><td class="score">427</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="489357360628891658">[TP] Siara</span></td><td class="pec"> 1×PEC</td><td class="score">363</td></tr><tr class="row0"><td class="rank">4.</td><td><span class="nick" data-dcid="587302538718609428">Gadzzet</span></td><td class="pec"> 1×PEC</td><td class="score">244</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">21</td><td class="team fourplus">PowerFour (A)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">0.33</span> players per PEC)</span></div></td><td class="score fourplus">1551</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="665629966406254622">Lucky</span></td><td class="pec"> 1×PEC</td><td class="score">1551</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">22</td><td class="team fourplus">Kałuża Team (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">1.33</span> players per PEC)</span></div></td><td class="score fourplus">1266</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="680024214094217226">|KT|Buła</span></td><td class="pec"> 2×PEC</td><td class="score">673</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="131">|KT|Pro100</span></td><td class="pec"> 1×PEC</td><td class="score">458</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="689447976199782410">LoLek</span></td><td class="pec"> 1×PEC</td><td class="score">135</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">23</td><td class="team fourplus">Drogowi Patole (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">0.67</span> players per PEC)</span></div></td><td class="score fourplus">637</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="138">|DP|WzN</span></td><td class="pec"> 2×PEC</td><td class="score">637</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">24</td><td class="team fourplus">Legion pl (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">0.67</span> players per PEC)</span></div></td><td class="score fourplus">623</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="648158955461410836">Wito</span></td><td class="pec"> 1×PEC</td><td class="score">515</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="673774974820941846">Kristaa</span></td><td class="pec"> 1×PEC</td><td class="score">108</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">24</td><td class="team fourplus">Team Germany (A)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">0.33</span> players per PEC)</span></div></td><td class="score fourplus">623</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="583000085588082704">|TG|Firestar</span></td><td class="pec"> 1×PEC</td><td class="score">623</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">26</td><td class="team fourplus">Polska (D)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">1</span> players per PEC)</span></div></td><td class="score fourplus">527</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="572511251390005248">Joe p!</span></td><td class="pec"> 1×PEC</td><td class="score">340</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="577792050423005195">Kabura</span></td><td class="pec"> 1×PEC</td><td class="score">154</td></tr><tr class="row1"><td class="rank">3.</td><td><span class="nick" data-dcid="461159478398550026">PL|MIXON3K/PL|iAMmiki</span></td><td class="pec"> 1×PEC</td><td class="score">33</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">27</td><td class="team fourplus">Stara Gwardia (A)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">0.67</span> players per PEC)</span></div></td><td class="score fourplus">423</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="624312402846154772">DonKamilo</span></td><td class="pec"> 2×PEC</td><td class="score">423</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">28</td><td class="team fourplus">PiWEX (B)<div style="float: right; text-align: right;">2×PEC <span>(avg <span style="color: #AA3300;">0.67</span> players per PEC)</span></div></td><td class="score fourplus">415</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="643707339882496001">|CT|MACIEJ</span></td><td class="pec"> 1×PEC</td><td class="score">327</td></tr><tr class="row0"><td class="rank">2.</td><td><span class="nick" data-dcid="643907270576570420">Kocurro</span></td><td class="pec"> 1×PEC</td><td class="score">88</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">29</td><td class="team fourplus">United Poland (C)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">0.33</span> players per PEC)</span></div></td><td class="score fourplus">338</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="569980841967747082">Odyssey</span></td><td class="pec"> 1×PEC</td><td class="score">338</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">30</td><td class="team fourplus">MOC (A)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">0.33</span> players per PEC)</span></div></td><td class="score fourplus">301</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="607970800653434888">(MOC)smierc</span></td><td class="pec"> 1×PEC</td><td class="score">301</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">31</td><td class="team fourplus">SB|PRO CREW (A)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">0.33</span> players per PEC)</span></div></td><td class="score fourplus">265</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="392095407834136588">(SB)Sbarro</span></td><td class="pec"> 1×PEC</td><td class="score">265</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">32</td><td class="team fourplus">NASCAR RACING (A)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">0.33</span> players per PEC)</span></div></td><td class="score fourplus">191</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="626840268418711562">PBH</span></td><td class="pec"> 1×PEC</td><td class="score">191</td></tr></table></td></tr></table><table border="1" bordercolor="CCCCCC" class="team"><tr><td class="rank fourplus" rowspan="2">33</td><td class="team fourplus">Sweden HCR (A)<div style="float: right; text-align: right;">1×PEC <span>(avg <span style="color: #AA3300;">0.33</span> players per PEC)</span></div></td><td class="score fourplus">18</td></tr><tr class="players"><td colspan="2"><table cellpadding="0" cellspacing="0"><tr class="row1"><td class="rank">1.</td><td><span class="nick" data-dcid="592810056001650699">M0mpan</span></td><td class="pec"> 1×PEC</td><td class="score">18</td></tr></table></td></tr></table>
+</div>
+<div class="tables nations e" style="display: none;">
+	<table style="width: 100%;">
+		<tr>
+			<th class="table-title">Season 2 episode 3 national team results | PEC 18 | Each national team can have a maximum of 4 players</th>
+		</tr>
+	</table>
+</div>
+<div class="tables nations s" style="display: none;">
+	<table style="width: 100%;">
+		<tr>
+			<th class="table-title">Season national team standings after episode 3 of 15</th>
+		</tr>
+	</table>
 </div>			</div>
 		</div>
 	</body>
